@@ -5,7 +5,7 @@ Transactional email templates that are built to be mobile friendly, and beautifu
 ## Inline the CSS
 For client compatibility, HTML emails should always be inlined before sending.
 
-* [Postmark CSS Inliner](https://github.com/wildbit/css-inliner)
+* [Postmark Style Merge](https://github.com/wildbit/style-merge)
 * [Premailer](https://github.com/peterbe/premailer)
 
 If you choose to send your emails with [Postmark](http://postmarkapp.com), each time you send we will automagically inline the CSS for you.
