@@ -11,13 +11,13 @@ For client compatibility, HTML emails should always be inlined before sending.
 If you choose to send your emails with [Postmark](http://postmarkapp.com), each time you send we will automagically inline the CSS for you.
 
 ## Welcome
-* [Preview &rarr;](http://bnst.lk/1SUiquB)
+* [Preview &rarr;](http://assets.wildbit.com/postmark/misc/starter-templates/welcome.html)
 * [Litmus test results &rarr;](https://litmus.com/pub/54fd4bd/screenshots)
 
 ## Reset password
-* [Preview &rarr;](http://bnst.lk/1MFA45N)
+* [Preview &rarr;](http://assets.wildbit.com/postmark/misc/starter-templates/resetpassword.html)
 * [Litmus test results &rarr;](https://litmus.com/pub/c6b3e8b/screenshots)
 
 ## Receipt
-* [Preview &rarr;](http://bnst.lk/1SUieeO)
+* [Preview &rarr;](http://assets.wildbit.com/postmark/misc/starter-templates/receipt.html)
 * [Litmus test results &rarr;](https://litmus.com/pub/3add291)
