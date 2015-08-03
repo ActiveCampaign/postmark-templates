@@ -1,6 +1,6 @@
 <img src="http://assets.wildbit.com/postmark/misc/starter-templates-icon@2x.png" alt="Mustachio" width="147" height="147">
 # Postmark Transactional Email Templates
-Transactional email templates that are built to be mobile friendly, and beautiful across all major email clients.
+Content ready, mobile friendly, and beautiful across all major email clients.
 
 ## Inline the CSS
 For client compatibility, HTML emails should always be inlined before sending.
@@ -20,4 +20,4 @@ If you choose to send your emails with [Postmark](http://postmarkapp.com), each 
 
 ## Receipt
 * [Preview &rarr;](http://assets.wildbit.com/postmark/misc/starter-templates/receipt.html)
-* [Litmus test results &rarr;](https://litmus.com/pub/3add291)
+* [Litmus test results &rarr;](https://litmus.com/pub/e0a58d8)
