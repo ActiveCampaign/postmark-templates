@@ -1,0 +1,18 @@
+Hi {{name}},
+
+Thanks for signing up for {{product_name}}. We're very excited to have you on board.
+
+To get started using {{product_name}}, please confirm your account below:
+
+{{action_url}}
+
+Thanks,
+{{sender_name}} and the {{product_name}} Team
+
+P.S. Need help getting started? Check out our help documentation. Or, just reply to this email with any questions or issues you have. The {{product_name}} support team is always excited to help you.
+
+© 2015 {{product_name}}. All rights reserved.
+
+{{product_name}}
+{{product_address_line1}}
+{{product_address_line2}}

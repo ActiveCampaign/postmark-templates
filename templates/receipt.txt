@@ -1,0 +1,24 @@
+Hi {{name}},
+
+Thanks for ordering from {{product_name}}. This email serves as a receipt for your purchase. No payment is due with this receipt.
+
+Please retain this email receipt for your records. Also, on your statement this purchase will appear as “{{statement_name}}”.
+
+{{invoice_id}} - {{date}}
+-------------------------------------
+{{#each invoice_details}}
+  {{amount}} - {{description}}
+{{/each}}
+-------------------------------------
+Total: {{total}}
+
+Cheers,
+The team at {{product_name}}
+
+P.S. Please reply to this email if you want to ask a question or just say hi.
+
+© 2015 {{product_name}}. All rights reserved.
+
+{{product_name}}
+{{product_address_line1}}
+{{product_address_line2}}
