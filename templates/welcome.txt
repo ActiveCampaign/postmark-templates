@@ -6,6 +6,8 @@ To get started using {{product_name}}, please confirm your account below:
 
 {{action_url}}
 
+For your reference, your username is {{username}} for logging in.
+
 Thanks,
 {{sender_name}} and the {{product_name}} Team
 

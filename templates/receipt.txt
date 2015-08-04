@@ -2,7 +2,7 @@ Hi {{name}},
 
 Thanks for ordering from {{product_name}}. This email serves as a receipt for your purchase. No payment is due with this receipt.
 
-Please retain this email receipt for your records. Also, on your statement this purchase will appear as “{{statement_name}}”.
+Please keep this email receipt for your records. This purchase will appear as “{{statement_name}}” on your credit card statement.
 
 {{invoice_id}} - {{date}}
 -------------------------------------
