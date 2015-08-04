@@ -4,7 +4,7 @@ Content ready, mobile friendly, and beautiful across all major email clients.
 
 #### What's this for?
 
-*Postmark Transactional Email Templates* are rock-solid email templates that render beautifully tons of email clients. They provide the foundation of our [Postmark Templates](http://blog.postmarkapp.com/post/125849089273/special-delivery-postmark-templates) feature, and we're glad to provide them as Open Source to the wider community.
+*Postmark Transactional Email Templates* are rock-solid email templates that render beautifully in tons of email clients. They provide the foundation of our [Postmark Templates](http://blog.postmarkapp.com/post/125849089273/special-delivery-postmark-templates) feature, and we're glad to provide them as Open Source to the wider community.
 
 ## Inline the CSS
 For client compatibility, HTML emails should always be inlined before sending.
