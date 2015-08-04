@@ -1,4 +1,4 @@
-<img src="http://assets.wildbit.com/postmark/misc/starter-templates-icon@2x.png" alt="Mustachio" width="147" height="147">
+<img src="http://assets.wildbit.com/postmark/misc/starter-templates-icon@2x.png" alt="Postmark Transactional Email Templates" width="147" height="147">
 # Postmark Transactional Email Templates
 Content ready, mobile friendly, and beautiful across all major email clients.
 
