@@ -24,4 +24,4 @@ If you choose to send your emails with [Postmark](http://postmarkapp.com), each 
 
 ## Receipt
 * [Preview &rarr;](http://assets.wildbit.com/postmark/misc/starter-templates/receipt.html)
-* [Litmus test results &rarr;](https://litmus.com/pub)
+* [Litmus test results &rarr;](https://litmus.com/pub/e0a58d8)
