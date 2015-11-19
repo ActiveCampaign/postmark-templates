@@ -91,6 +91,15 @@
     .content-cell {
       padding: 35px;
     }
+    .content-banner{
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    .content-banner img{
+      width: 100%;
+      height: auto;
+    }
     .align-right {
       text-align: right;
     }
@@ -185,6 +194,11 @@
             <td class="email-body" width="100%">
               <table class="email-body_inner" align="center" width="570" cellpadding="0" cellspacing="0">
                 <!-- Body content -->
+                <tr>
+                  <td class="content-banner">
+                    <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=570%C3%97150&w=570&h=150" alt="570x150"/>
+                  </td>
+                </tr>
                 <tr>
                   <td class="content-cell">
                     <h1>Hi {{name}},</h1>
