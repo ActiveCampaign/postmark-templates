@@ -17,7 +17,7 @@ The team at {{product_name}}
 
 P.S. Please reply to this email if you want to ask a question or just say hi.
 
-© 2015 {{product_name}}. All rights reserved.
+© 2016 {{product_name}}. All rights reserved.
 
 {{product_name}}
 {{product_address_line1}}
