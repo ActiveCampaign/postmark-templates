@@ -400,12 +400,21 @@
                   <tr>
                     <td class="content-cell">
                       {{body}}
+                      <br>
                       <br> {{#attachment_details}}
-                      <ul class="attribute-list">
-                        {{#each . }}
-                        <li><a href="{{attachmenet_url}}">{{attachment_name}}</a> <span>({{attachment_size}} {{attachment_type}})</span></li>
-                        {{/each}}
-                      </ul>
+                      <table class="attribute-list" width="100%" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td class="attribute-list-container">
+                            <table width="100%" cellpadding="0" cellspacing="0">
+                              {{#each . }}
+                              <tr>
+                                <td class="attribute-list-item"><a href="{{attachmenet_url}}">{{attachment_name}}</a> <span>({{attachment_size}} {{attachment_type}})</span></td>
+                              </tr>
+                              {{/each}}
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
                       {{/attachment_details}}
                     </td>
                   </tr>

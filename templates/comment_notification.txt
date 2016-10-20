@@ -2,7 +2,9 @@
 
 {{#attachment_details}}
 
-{{#each . }}* {{attachment_name}} ( {{ attachmenet_url }} ) ({{attachment_size}} {{attachment_type}})
+{{#each . }}
+
+{{attachment_name}} ( {{ attachmenet_url }} ) ({{attachment_size}} {{attachment_type}})
 
 {{/each}}
 

@@ -38,11 +38,19 @@ width: 100% !important; height: 100%; margin: 0; line-height: 1.4; background-co
                     <td class="content-cell" style="box-sizing: border-box; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; padding: 35px;">
                       {{body}}
                       <br /> {{#attachment_details}}
-                      <ul class="attribute-list" style="box-sizing: border-box; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; line-height: 1.4; margin: 0 0 21px; text-align: left;">
-                        {{#each . }}
-                        <li style="box-sizing: border-box; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;"><a href="{{attachmenet_url}}" style="box-sizing: border-box; color: #3869D4; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">{{attachment_name}}</a> <span style="box-sizing: border-box; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">({{attachment_size}} {{attachment_type}})</span></li>
-                        {{/each}}
-                      </ul>
+                      <table class="attribute-list" width="100%" cellpadding="0" cellspacing="0" style="box-sizing: border-box; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; margin: 0 0 21px;">
+                        <tr>
+                          <td class="attribute-list-container" style="box-sizing: border-box; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; padding: 16px;" bgcolor="#EDEFF2">
+                            <table width="100%" cellpadding="0" cellspacing="0" style="box-sizing: border-box; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">
+                              {{#each . }}
+                              <tr>
+                                <td class="attribute-list-item" style="box-sizing: border-box; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; padding: 0;"><a href="{{attachmenet_url}}" style="box-sizing: border-box; color: #3869D4; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">{{attachment_name}}</a> <span style="box-sizing: border-box; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">({{attachment_size}} {{attachment_type}})</span></td>
+                              </tr>
+                              {{/each}}
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
                       {{/attachment_details}}
                     </td>
                   </tr>
