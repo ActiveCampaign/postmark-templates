@@ -24,6 +24,8 @@ If you choose to send your emails with [Postmark](http://postmarkapp.com), each 
 
 ### Welcome
 
+Send a welcome email to users after they sign up.
+
 * [Welcome email best practices guide](https://postmarkapp.com/guides/welcome-email-best-practices)
 * [Preview &rarr;](http://assets.wildbit.com/postmark/templates/dist/welcome.html)
 * [Litmus test results &rarr;](#)
@@ -32,10 +34,17 @@ If you choose to send your emails with [Postmark](http://postmarkapp.com), each 
 
 * [Reset password best practices guide](https://postmarkapp.com/guides/password-reset-email-best-practices)
 
-* Reset Password
+#### Reset Password
+
+  Send users a link to reset their password.
+  
   * [Preview &rarr;](http://assets.wildbit.com/postmark/templates/dist/password_reset.html)
   * [Litmus test results &rarr;](#)
-* Reset Password Help
+
+#### Reset Password Help
+
+  Help users reset their password if they can’t remember their email.
+
   * [Preview &rarr;](http://assets.wildbit.com/postmark/templates/dist/password_reset_help.html)
   * [Litmus test results &rarr;](#)
 
@@ -43,14 +52,23 @@ If you choose to send your emails with [Postmark](http://postmarkapp.com), each 
 
 [Receipt and invoices best practices guide](https://postmarkapp.com/guides/receipt-and-invoice-email-best-practices)
 
-* Receipt
+#### Receipt
+
+  Send a receipt to users after they made a purchase.
+
   * [Preview &rarr;](http://assets.wildbit.com/postmark/templates/dist/receipt.html)
   * [Litmus test results &rarr;](#)
-* Invoice
+
+#### Invoice
+
+  Request payment from a user.
+
   * [Preview &rarr;](http://assets.wildbit.com/postmark/templates/dist/invoice.html)
   * [Litmus test results &rarr;](#)
 
 ### Comment notification
+
+Notify users of new comments by other users.
 
 * [Comment notification best practices guide](https://postmarkapp.com/guides/notification-email-best-practices)
 * [Preview &rarr;](http://assets.wildbit.com/postmark/templates/dist/comment_notification.html)
@@ -60,14 +78,23 @@ If you choose to send your emails with [Postmark](http://postmarkapp.com), each 
 
 [Trial expiration email best pracitces](https://postmarkapp.com/guides/trial-expiration-email-best-practices)
 
-* Trial Expiring
+#### Trial Expiring
+
+  Let users know when their trial is about to expire.
+  
   * [Preview &rarr;](http://assets.wildbit.com/postmark/templates/dist/trial_expiring.html)
   * [Litmus test results &rarr;](#)
-* Trial Expired
+
+#### Trial Expired
+
+  Let users know when their expired trial.
+
   * [Preview &rarr;](http://assets.wildbit.com/postmark/templates/dist/trial_expired.html)
   * [Litmus test results &rarr;](#)
 
 ### User Invitation
+
+  Help users invite others to use your software.
 
 * [User invitation email best practices](https://postmarkapp.com/guides/user-invitation-email-best-practices)
 * [Preview &rarr;](http://assets.wildbit.com/postmark/templates/dist/user_invitation.html)
