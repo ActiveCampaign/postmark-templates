@@ -23,37 +23,52 @@ If you choose to send your emails with [Postmark](http://postmarkapp.com), each 
 ## The Templates
 
 ### Welcome
+
+* [Welcome email best practices guide](https://postmarkapp.com/guides/welcome-email-best-practices)
 * [Preview &rarr;](http://assets.wildbit.com/postmark/templates/dist/welcome.html)
 * [Litmus test results &rarr;](#)
 
 ### Reset password
-* [Preview &rarr;](http://assets.wildbit.com/postmark/templates/dist/password_reset.html)
-* [Litmus test results &rarr;](#)
 
-### Reset password help
-* [Preview &rarr;](http://assets.wildbit.com/postmark/templates/dist/password_reset_help.html)
-* [Litmus test results &rarr;](#)
+* [Reset password best practices guide](https://postmarkapp.com/guides/password-reset-email-best-practices)
 
-### Receipt
-* [Preview &rarr;](http://assets.wildbit.com/postmark/templates/dist/receipt.html)
-* [Litmus test results &rarr;](#)
+* Reset Password
+  * [Preview &rarr;](http://assets.wildbit.com/postmark/templates/dist/password_reset.html)
+  * [Litmus test results &rarr;](#)
+* Reset Password Help
+  * [Preview &rarr;](http://assets.wildbit.com/postmark/templates/dist/password_reset_help.html)
+  * [Litmus test results &rarr;](#)
 
-### Invoice
-* [Preview &rarr;](http://assets.wildbit.com/postmark/templates/dist/invoice.html)
-* [Litmus test results &rarr;](#)
+### Receipts/Invoices
+
+[Receipt and invoices best practices guide](https://postmarkapp.com/guides/receipt-and-invoice-email-best-practices)
+
+* Receipt
+  * [Preview &rarr;](http://assets.wildbit.com/postmark/templates/dist/receipt.html)
+  * [Litmus test results &rarr;](#)
+* Invoice
+  * [Preview &rarr;](http://assets.wildbit.com/postmark/templates/dist/invoice.html)
+  * [Litmus test results &rarr;](#)
 
 ### Comment notification
+
+* [Comment notification best practices guide](https://postmarkapp.com/guides/notification-email-best-practices)
 * [Preview &rarr;](http://assets.wildbit.com/postmark/templates/dist/comment_notification.html)
 * [Litmus test results &rarr;](#)
 
-### Trial Expiring
-* [Preview &rarr;](http://assets.wildbit.com/postmark/templates/dist/trial_expiring.html)
-* [Litmus test results &rarr;](#)
+### Trial expiration
 
-### Trial Expired
-* [Preview &rarr;](http://assets.wildbit.com/postmark/templates/dist/trial_expired.html)
-* [Litmus test results &rarr;](#)
+[Trial expiration email best pracitces](https://postmarkapp.com/guides/trial-expiration-email-best-practices)
+
+* Trial Expiring
+  * [Preview &rarr;](http://assets.wildbit.com/postmark/templates/dist/trial_expiring.html)
+  * [Litmus test results &rarr;](#)
+* Trial Expired
+  * [Preview &rarr;](http://assets.wildbit.com/postmark/templates/dist/trial_expired.html)
+  * [Litmus test results &rarr;](#)
 
 ### User Invitation
+
+* [User invitation email best practices](https://postmarkapp.com/guides/user-invitation-email-best-practices)
 * [Preview &rarr;](http://assets.wildbit.com/postmark/templates/dist/user_invitation.html)
 * [Litmus test results &rarr;](#)
