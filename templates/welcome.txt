@@ -10,7 +10,7 @@ Thanks for trying [Product Name]. We’re thrilled to have you on board.
 
 To get the most out of [Product Name], do this primary next step:
 
-Do this Next ( %5C{{ action_url }} )
+Do this Next ( http://example.com )
 
 For reference, here's your login information:
 

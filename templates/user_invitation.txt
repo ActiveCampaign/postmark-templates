@@ -8,7 +8,7 @@ Hi, {{name}}!
 
 {{invite_sender_name}} with {{invite_sender_organization_name}} has invited you to use [Product Name] to collaborate with them. Use the button below to set up your account and get started:
 
-Set up account ( {{ action_url }} )
+Set up account ( http://example.com )
 
 If you have any questions for {{invite_sender_name}}, you can reply to this email and it will go right to them. Alternatively, feel free to contact our customer success team ( ) anytime. (We're lightning quick at replying.) We also offer live chat ( ) during business hours.
 
