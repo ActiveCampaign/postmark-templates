@@ -16,12 +16,12 @@ If you choose to send your emails with [Postmark](http://postmarkapp.com), each 
 
 ## Welcome
 * [Preview &rarr;](http://assets.wildbit.com/postmark/misc/starter-templates/welcome.html)
-* [Litmus test results &rarr;](https://litmus.com/pub/54fd4bd)
+* [Litmus test results &rarr;](https://litmus.com/pub/73317fd)
 
 ## Reset password
 * [Preview &rarr;](http://assets.wildbit.com/postmark/misc/starter-templates/resetpassword.html)
-* [Litmus test results &rarr;](https://litmus.com/pub/c6b3e8b)
+* [Litmus test results &rarr;](https://litmus.com/pub/dce5dfc)
 
 ## Receipt
 * [Preview &rarr;](http://assets.wildbit.com/postmark/misc/starter-templates/receipt.html)
-* [Litmus test results &rarr;](https://litmus.com/pub/9619397)
+* [Litmus test results &rarr;](https://litmus.com/pub/22b9e51)
