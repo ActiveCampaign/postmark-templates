@@ -3,7 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Receipt for {{product_name}}</title>
+    <title>Your [product name] trial is about to expire</title>
     <!-- 
     The <style> block is collapsed on page load to save you some scrolling.
     Postmark automatically inlines all CSS properties for maximum email client 
@@ -388,7 +388,7 @@
     </style>
   </head>
   <body>
-    <span class="preheader">This is a receipt for your recent purchase on {{ purchase_date }}. No payment is due with this receipt.</span>
+    <span class="preheader">Your trial period for {{product_name}} is about expired. Is there anything we can do to help?</span>
     <table class="email-wrapper" width="100%" cellpadding="0" cellspacing="0">
       <tr>
         <td align="center">
@@ -407,74 +407,8 @@
                   <!-- Body content -->
                   <tr>
                     <td class="content-cell">
-                      <h1>Hi {{name}},</h1>
-                      <p>Thanks for using [Product Name]. This email is the receipt for your purchase. No payment is due.</p>
-                      <p>This purchase will appear as “[Credit Card Statement Name]” on your credit card statement for your {{credit_card_brand}} ending in {{credit_card_last_four}}. Need to <a href="{{billing_url}}">update your payment information</a>?</p>
-                      <!-- Discount -->
-                      <table class="body-discount" align="center" width="100%" cellpadding="0" cellspacing="0">
-                        <tr>
-                          <td align="center">
-                            <div class="discount-container">
-                              <h1>10% off your next purchase!</h1>
-                              <p>Thanks for your support! Here's a coupon for 10% off your next purchase if used by {{expiration_date}}.</p>
-                              <!-- Border based button
-                         https://litmus.com/blog/a-guide-to-bulletproof-buttons-in-email-design -->
-                              <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                <tr>
-                                  <td align="center">
-                                    <table border="0" cellspacing="0" cellpadding="0">
-                                      <tr>
-                                        <td>
-                                          <a href="http://example.com" class="button button--green" target="_blank">Use this discount now...</a>
-                                        </td>
-                                      </tr>
-                                    </table>
-                                  </td>
-                                </tr>
-                              </table>
-                            </div>
-                          </td>
-                        </tr>
-                      </table>
-                      <table class="purchase-wrapper" width="100%" cellpadding="0" cellspacing="0">
-                        <tr>
-                          <td>
-                            <h3>{{receipt_id}}</h3></td>
-                          <td>
-                            <h3 class="align-right">{{date}}</h3></td>
-                        </tr>
-                        <tr>
-                          <td colspan="2">
-                            <table class="purchase-table" width="100%" cellpadding="0" cellspacing="0">
-                              <tr>
-                                <th>
-                                  <p>Description</p>
-                                </th>
-                                <th>
-                                  <p class="align-right">Amount</p>
-                                </th>
-                              </tr>
-                              {{#each receipt_details}}
-                              <tr>
-                                <td width="80%">{{description}}</td>
-                                <td class="align-right" width="20%">{{amount}}</td>
-                              </tr>
-                              {{/each}}
-                              <tr>
-                                <td width="80%" class="total-cell" valign="middle">
-                                  <p class="total-cell_label">Total</p>
-                                </td>
-                                <td width="20%" class="total-cell" valign="middle">
-                                  <p>{{total}}</p>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-                      <p>If you have any questions about this receipt, simply reply to this email or reach out to our <a href="{{support_url}}">support team</a> for help.</p>
-                      <p>Cheers,
-                        <br>The [Product Name] Team</p>
+                      <h1>Your [Product Name] trial ends in 3 days </h1>
+                      <p>Thanks for trying [Product Name]. You've added a lot of data, so here are several options for you to consider going forward.</p>
                       <!-- Action -->
                       <table class="body-action" align="center" width="100%" cellpadding="0" cellspacing="0">
                         <tr>
@@ -487,7 +421,7 @@
                                   <table border="0" cellspacing="0" cellpadding="0">
                                     <tr>
                                       <td>
-                                        <a href="\{{action_url}}" class="button button--blue" target="_blank">Download as PDF</a>
+                                        <a href="\{{action_url}}" class="button button--green" target="_blank">Upgrade your account</a>
                                       </td>
                                     </tr>
                                   </table>
@@ -497,16 +431,40 @@
                           </td>
                         </tr>
                       </table>
-                      <!-- Sub copy -->
-                      <table class="body-sub">
+                      <p>If you're not ready to upgrade to a paying account, you have a few other options available to you&hellip;</p>
+                      <table class="attribute-list" width="100%" cellpadding="0" cellspacing="0">
                         <tr>
-                          <td>
-                            <p class="sub">Need a printable copy for your records?</strong> You can <a href="{{action_url
-                  }}">download a PDF version</a>.</p>
-                            <p class="sub">Moved recently? Have a new credit card? You can easily <a href="{{billing_url}}">update your billing information</a>.</p>
+                          <td class="attribute-list-container">
+                            <table width="100%" cellpadding="0" cellspacing="0">
+                              <tr>
+                                <td class="attribute-list-item"><strong><a href="{{trial_extension_url}}">Restart your trial</a></strong> - If you didn't get a chance to fully try out the product or need a little more time to evaluate, just let us know. Simply reply to this email and we'll extend your trial period.
+                                  <br>
+                                  <br>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="attribute-list-item"><strong><a href="{{feedback_url}}">Share feedback</a></strong> - If [Product Name] isn't right for you, let us know what you were looking for and we might be able to suggest some alternatives that might be a better fit.
+                                  <br>
+                                  <br>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="attribute-list-item"><strong><a href="{{export_url}}">Export your data</a></strong> - If [Product Name] wasn't a good fit, you can export your data for use elsewhere.
+                                  <br>
+                                  <br>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="attribute-list-item"><strong><a href="{{close_account_url}}">Close your account</a></strong> - You can close your account and delete your data. Or, do nothing and we'll automatically close it and delete your data for you in 90 days. But don't worry, we'll send you another email before that happens.</td>
+                              </tr>
+                            </table>
                           </td>
                         </tr>
                       </table>
+                      <p>Regardless of your choice, we want to say thank you for trying [Product Name]. We know it's an investment of your time, and we appreciate you giving us a chance.</p>
+                      <p>Thanks,
+                        <br>[Sender Name] and the [Product Name] Team</p>
+                      <p><strong>P.S.</strong> If you have any questions or need any help, please don't hesitate to reach out. You can reply to this email or join us on live chat during business hours.</p>
                     </td>
                   </tr>
                 </table>

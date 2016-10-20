@@ -1,20 +1,44 @@
-Hi {{name}},
+Thanks for trying out {{product_name}}. We've pulled together some information and resources to help you get started.
 
-Thanks for signing up for {{product_name}}. We're very excited to have you on board.
+[Product Name] ( https://example.com )
 
-To get started using {{product_name}}, please confirm your account below:
+******************
+Welcome, {{name}}!
+******************
 
-{{action_url}}
+Thanks for trying [Product Name]. We’re thrilled to have you on board.
 
-For your reference, your username is {{username}} for logging in.
+To get the most out of [Product Name], do this primary next step:
+
+Do this Next ( %5C{{ action_url }} )
+
+For reference, here's your login information:
+
+Login Page: {{login_url}}
+
+Username: {{username}}
+
+You've started a {{trial_length}} day trial. You can upgrade to a paying account or cancel any time.
+
+Trial Start Date: {{trial_start_date}}
+
+Trial End Date: {{trial_end_date}}
+
+If you have any questions, feel free to email our customer success team ( {{ support_email }} ). (We're lightning quick at replying.) We also offer live chat ( {{ live_chat_url }} ) during business hours.
 
 Thanks,
-{{sender_name}} and the {{product_name}} Team
+[Sender Name] and the [Product Name] Team
 
-P.S. Need help getting started? Check out our help documentation. Or, just reply to this email with any questions or issues you have. The {{product_name}} support team is always excited to help you.
+P.S. Need immediate help getting started? Check out our help documentation ( {{ help_url }} ). Or, just reply to this email, the [Product Name] support team is always ready to help!
 
-© 2016 {{product_name}}. All rights reserved.
+If you’re having trouble with the button above, copy and paste the URL below into your web browser.
 
-{{product_name}}
-{{product_address_line1}}
-{{product_address_line2}}
+{{action_url}} ( )
+
+© 2016 [Product Name]. All rights reserved.
+
+[Company Name, LLC]
+
+1234 Street Rd.
+
+Suite 1234

@@ -1,16 +1,22 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>Welcome to {{product_name}}, {{name}}!</title>
-  <style type="text/css" rel="stylesheet" media="all">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Welcome to {{product_name}}, {{name}}!</title>
+    <!-- 
+    The <style> block is collapsed on page load to save you some scrolling.
+    Postmark automatically inlines all CSS properties for maximum email client 
+    compatibility. You can just update styles here, and Postmark does the rest.
+    -->
+    <style>
     /* Base ------------------------------ */
+    
     *:not(br):not(tr):not(html) {
       font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-      -webkit-box-sizing: border-box;
       box-sizing: border-box;
     }
+    
     body {
       width: 100% !important;
       height: 100%;
@@ -20,32 +26,53 @@
       color: #74787E;
       -webkit-text-size-adjust: none;
     }
+    
+    p,
+    ul,
+    ol,
+    blockquote {
+      line-height: 1.4;
+      text-align: left;
+    }
+    
     a {
       color: #3869D4;
     }
-
+    
+    a img {
+      border: none;
+    }
     /* Layout ------------------------------ */
+    
     .email-wrapper {
       width: 100%;
       margin: 0;
       padding: 0;
+      -premailer-width: 100%;
+      -premailer-cellpadding: 0;
+      -premailer-cellspacing: 0;
       background-color: #F2F4F6;
     }
+    
     .email-content {
       width: 100%;
       margin: 0;
       padding: 0;
+      -premailer-width: 100%;
+      -premailer-cellpadding: 0;
+      -premailer-cellspacing: 0;
     }
-
     /* Masthead ----------------------- */
+    
     .email-masthead {
       padding: 25px 0;
       text-align: center;
     }
+    
     .email-masthead_logo {
-      max-width: 400px;
-      border: 0;
+      width: 94px;
     }
+    
     .email-masthead_name {
       font-size: 16px;
       font-weight: bold;
@@ -53,49 +80,272 @@
       text-decoration: none;
       text-shadow: 0 1px 0 white;
     }
-
     /* Body ------------------------------ */
+    
     .email-body {
       width: 100%;
       margin: 0;
       padding: 0;
+      -premailer-width: 100%;
+      -premailer-cellpadding: 0;
+      -premailer-cellspacing: 0;
       border-top: 1px solid #EDEFF2;
       border-bottom: 1px solid #EDEFF2;
-      background-color: #FFF;
+      background-color: #FFFFFF;
     }
+    
     .email-body_inner {
       width: 570px;
       margin: 0 auto;
       padding: 0;
+      -premailer-width: 570px;
+      -premailer-cellpadding: 0;
+      -premailer-cellspacing: 0;
+      background-color: #FFFFFF;
     }
+    
     .email-footer {
       width: 570px;
       margin: 0 auto;
       padding: 0;
+      -premailer-width: 570px;
+      -premailer-cellpadding: 0;
+      -premailer-cellspacing: 0;
       text-align: center;
     }
+    
     .email-footer p {
       color: #AEAEAE;
     }
+    
     .body-action {
       width: 100%;
       margin: 30px auto;
       padding: 0;
+      -premailer-width: 100%;
+      -premailer-cellpadding: 0;
+      -premailer-cellspacing: 0;
       text-align: center;
     }
+    
     .body-sub {
       margin-top: 25px;
       padding-top: 25px;
       border-top: 1px solid #EDEFF2;
     }
+    
     .content-cell {
       padding: 35px;
     }
+    
+    .preheader {
+      display: none !important;
+    }
+    /* Attribute list ------------------------------ */
+    
+    .attribute-list {
+      margin: 0 0 21px;
+    }
+    
+    .attribute-list .attribute-list-container {
+      background-color: #EDEFF2;
+      padding: 16px;
+    }
+    
+    .attribute-list-item {
+      padding: 0;
+    }
+    /* Related Items ------------------------------ */
+    
+    .related-wrapper {
+      width: 100%;
+      margin: 0;
+      padding: 25px 0 0 0;
+      -premailer-width: 100%;
+      -premailer-cellpadding: 0;
+      -premailer-cellspacing: 0;
+    }
+    
+    .related-wrapper img {
+      display: block;
+      padding-bottom: 10px;
+    }
+    
+    .related-wrapper strong {
+      display: block;
+    }
+    
+    .related-wrapper .related-item {
+      align: center;
+      padding: 10px 0;
+      color: #74787E;
+      font-size: 15px;
+      line-height: 18px;
+    }
+    
+    .related-heading {
+      border-top: 1px solid #EDEFF2;
+      text-align: center;
+      padding-top: 25px;
+      padding-bottom: 10px;
+    }
+    
+    .related-heading h2 {
+      display: inline;
+    }
+    /* Discount Code ------------------------------ */
+    
+    .body-discount {
+      width: 100%;
+      margin: 0;
+      padding: 24px;
+      -premailer-width: 100%;
+      -premailer-cellpadding: 0;
+      -premailer-cellspacing: 0;
+      background-color: #EDEFF2;
+      border: 2px dashed #9BA2AB;
+    }
+    
+    .body-discount h1,
+    .body-discount p {
+      text-align: center;
+    }
+    
+    .body-discount p {
+      font-size: 90%;
+    }
+    /* Social Icons ------------------------------ */
+    
+    .social-links {
+      width: auto;
+    }
+    
+    .social-links td {
+      padding: 0;
+      width: auto;
+    }
+    
+    .social-image {
+      height: 20px;
+      margin-top: 0;
+      margin-right: 8px;
+      margin-bottom: 10px;
+      margin-left: 8px;
+      padding: 0;
+    }
+    /* Data table ------------------------------ */
+    
+    .purchase-wrapper {
+      width: 100%;
+      margin: 0;
+      padding: 35px 0;
+      -premailer-width: 100%;
+      -premailer-cellpadding: 0;
+      -premailer-cellspacing: 0;
+    }
+    
+    .purchase-table {
+      width: 100%;
+      margin: 0;
+      padding: 25px 0 0 0;
+      -premailer-width: 100%;
+      -premailer-cellpadding: 0;
+      -premailer-cellspacing: 0;
+    }
+    
+    .purchase-table th {
+      padding-bottom: 8px;
+      border-bottom: 1px solid #EDEFF2;
+    }
+    
+    .purchase-table th p {
+      margin: 0;
+      color: #9BA2AB;
+      font-size: 12px;
+    }
+    
+    .purchase-table td {
+      padding: 10px 0;
+      color: #74787E;
+      font-size: 15px;
+      line-height: 18px;
+    }
+    
+    .total-cell {
+      padding-top: 15px;
+      border-top: 1px solid #EDEFF2;
+    }
+    
+    .total-cell p {
+      margin: 0;
+      text-align: right;
+      font-weight: bold;
+      color: #2F3133;
+    }
+    
+    .total-cell_label {
+      padding: 0 15px 0 0;
+    }
+    /* Utilities ------------------------------ */
+    
     .align-right {
       text-align: right;
     }
-
+    
+    .align-left {
+      text-align: left;
+    }
+    
+    .align-center {
+      text-align: center;
+    }
+    /*Media Queries ------------------------------ */
+    
+    @media only screen and (max-width: 600px) {
+      .email-body_inner,
+      .email-footer {
+        width: 100% !important;
+      }
+    }
+    
+    @media only screen and (max-width: 500px) {
+      .button {
+        width: 100% !important;
+      }
+    }
+    /* Buttons ------------------------------ */
+    
+    .button {
+      background-color: #3869D4;
+      border-top: 10px solid #3869D4;
+      border-right: 18px solid #3869D4;
+      border-bottom: 10px solid #3869D4;
+      border-left: 18px solid #3869D4;
+      display: inline-block;
+      color: #FFF;
+      text-decoration: none;
+      border-radius: 3px;
+      box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16);
+      -webkit-text-size-adjust: none;
+    }
+    
+    .button--green {
+      background-color: #22BC66;
+      border-top: 10px solid #22BC66;
+      border-right: 18px solid #22BC66;
+      border-bottom: 10px solid #22BC66;
+      border-left: 18px solid #22BC66;
+    }
+    
+    .button--red {
+      background-color: #FF6136;
+      border-top: 10px solid #FF6136;
+      border-right: 18px solid #FF6136;
+      border-bottom: 10px solid #FF6136;
+      border-left: 18px solid #FF6136;
+    }
     /* Type ------------------------------ */
+    
     h1 {
       margin-top: 0;
       color: #2F3133;
@@ -103,6 +353,7 @@
       font-weight: bold;
       text-align: left;
     }
+    
     h2 {
       margin-top: 0;
       color: #2F3133;
@@ -110,6 +361,7 @@
       font-weight: bold;
       text-align: left;
     }
+    
     h3 {
       margin-top: 0;
       color: #2F3133;
@@ -117,6 +369,7 @@
       font-weight: bold;
       text-align: left;
     }
+    
     p {
       margin-top: 0;
       color: #74787E;
@@ -124,124 +377,128 @@
       line-height: 1.5em;
       text-align: left;
     }
+    
     p.sub {
       font-size: 12px;
     }
+    
     p.center {
       text-align: center;
     }
-
-    /* Buttons ------------------------------ */
-    .button {
-      display: inline-block;
-      width: 200px;
-      background-color: #3869D4;
-      border-radius: 3px;
-      color: #ffffff;
-      font-size: 15px;
-      line-height: 45px;
-      text-align: center;
-      text-decoration: none;
-      -webkit-text-size-adjust: none;
-      mso-hide: all;
-    }
-    .button--green {
-      background-color: #22BC66;
-    }
-    .button--red {
-      background-color: #dc4d2f;
-    }
-    .button--blue {
-      background-color: #3869D4;
-    }
-
-    /*Media Queries ------------------------------ */
-    @media only screen and (max-width: 600px) {
-      .email-body_inner,
-      .email-footer {
-        width: 100% !important;
-      }
-    }
-    @media only screen and (max-width: 500px) {
-      .button {
-        width: 100% !important;
-      }
-    }
-  </style>
-</head>
-<body>
-  <table class="email-wrapper" width="100%" cellpadding="0" cellspacing="0">
-    <tr>
-      <td align="center">
-        <table class="email-content" width="100%" cellpadding="0" cellspacing="0">
-          <!-- Logo -->
-          <tr>
-            <td class="email-masthead">
-              <a class="email-masthead_name">{{product_name}}</a>
-            </td>
-          </tr>
-          <!-- Email Body -->
-          <tr>
-            <td class="email-body" width="100%">
-              <table class="email-body_inner" align="center" width="570" cellpadding="0" cellspacing="0">
-                <!-- Body content -->
-                <tr>
-                  <td class="content-cell">
-                    <h1>Hi {{name}},</h1>
-                    <p>Thanks for signing up for {{product_name}}. We’re very excited to have you on board.</p>
-                    <p>To get started using {{product_name}}, please confirm your account below:</p>
-                    <!-- Action -->
-                    <table class="body-action" align="center" width="100%" cellpadding="0" cellspacing="0">
-                      <tr>
-                        <td align="center">
-                          <div>
-                            <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{action_url}}" style="height:45px;v-text-anchor:middle;width:200px;" arcsize="7%" stroke="f" fill="t">
-                            <v:fill type="tile" color="#22BC66" />
-                            <w:anchorlock/>
-                            <center style="color:#ffffff;font-family:sans-serif;font-size:15px;">Confirm your account</center>
-                          </v:roundrect><![endif]-->
-                            <a href="{{action_url}}" class="button button--green">Confirm your account</a>
-                          </div>
-                        </td>
-                      </tr>
-                    </table>
-                    <p>For your reference, your username is <strong>{{username}}</strong> for logging in.</p>
-                    <p>Thanks,<br>{{sender_name}} and the {{product_name}} Team</p>
-                    <p><strong>P.S.</strong> Need help getting started? Check out our help documentation. Or, just reply to this email with any questions or issues you have. The {{product_name}} support team is always excited to help you.</p>
-                    <!-- Sub copy -->
-                    <table class="body-sub">
-                      <tr>
-                        <td>
-                          <p class="sub">If you’re having trouble clicking the confirm account button, copy and paste the URL below into your web browser.
-                          </p>
-                          <p class="sub"><a href="{{action_url}}">{{action_url}}</a></p>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <table class="email-footer" align="center" width="570" cellpadding="0" cellspacing="0">
-                <tr>
-                  <td class="content-cell">
-                    <p class="sub center">&copy; 2016 {{product_name}}. All rights reserved.</p>
-                    <p class="sub center">
-                      {{product_name}}
-                      <br>{{product_address_line1}}
-                      <br>{{product_address_line2}}
-                    </p>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
-</body>
+    </style>
+  </head>
+  <body>
+    <span class="preheader">Thanks for trying out {{product_name}}. We&#x27;ve pulled together some information and resources to help you get started.</span>
+    <table class="email-wrapper" width="100%" cellpadding="0" cellspacing="0">
+      <tr>
+        <td align="center">
+          <table class="email-content" width="100%" cellpadding="0" cellspacing="0">
+            <tr>
+              <td class="email-masthead">
+                <a href="https://example.com" class="email-masthead_name">
+        [Product Name]
+      </a>
+              </td>
+            </tr>
+            <!-- Email Body -->
+            <tr>
+              <td class="email-body" width="100%" cellpadding="0" cellspacing="0">
+                <table class="email-body_inner" align="center" width="570" cellpadding="0" cellspacing="0">
+                  <!-- Body content -->
+                  <tr>
+                    <td class="content-cell">
+                      <h1>Welcome, {{name}}!</h1>
+                      <p>Thanks for trying [Product Name]. We’re thrilled to have you on board.</p>
+                      <p>To get the most out of [Product Name], do this primary next step:</p>
+                      <!-- Action -->
+                      <table class="body-action" align="center" width="100%" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td align="center">
+                            <!-- Border based button
+                       https://litmus.com/blog/a-guide-to-bulletproof-buttons-in-email-design -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tr>
+                                <td align="center">
+                                  <table border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                      <td>
+                                        <a href="\{{action_url}}" class="button button--" target="_blank">Do this Next</a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <p>For reference, here's your login information:</p>
+                      <table class="attribute-list" width="100%" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td class="attribute-list-container">
+                            <table width="100%" cellpadding="0" cellspacing="0">
+                              <tr>
+                                <td class="attribute-list-item"><strong>Login Page:</strong> {{login_url}}</td>
+                              </tr>
+                              <tr>
+                                <td class="attribute-list-item"><strong>Username:</strong> {{username}}</td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <p>You've started a {{trial_length}} day trial. You can upgrade to a paying account or cancel any time.</p>
+                      <table class="attribute-list" width="100%" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td class="attribute-list-container">
+                            <table width="100%" cellpadding="0" cellspacing="0">
+                              <tr>
+                                <td class="attribute-list-item"><strong>Trial Start Date:</strong> {{trial_start_date}}</td>
+                              </tr>
+                              <tr>
+                                <td class="attribute-list-item"><strong>Trial End Date:</strong> {{trial_end_date}}</td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <p>If you have any questions, feel free to <a href="mailto:{{support_email}}">email our customer success team</a>. (We're lightning quick at replying.) We also offer <a href="{{live_chat_url}}">live chat</a> during business hours.</p>
+                      <p>Thanks,
+                        <br>[Sender Name] and the [Product Name] Team</p>
+                      <p><strong>P.S.</strong> Need immediate help getting started? Check out our <a href="{{help_url}}">help documentation</a>. Or, just reply to this email, the [Product Name] support team is always ready to help!</p>
+                      <!-- Sub copy -->
+                      <table class="body-sub">
+                        <tr>
+                          <td>
+                            <p class="sub">If you’re having trouble with the button above, copy and paste the URL below into your web browser.</p>
+                            <p class="sub"><a href="">{{action_url}}</a></p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <table class="email-footer" align="center" width="570" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td class="content-cell" align="center">
+                      <p class="sub align-center">&copy; 2016 [Product Name]. All rights reserved.</p>
+                      <p class="sub align-center">
+                        [Company Name, LLC]
+                        <br>1234 Street Rd.
+                        <br>Suite 1234
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>
