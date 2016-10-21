@@ -91,7 +91,7 @@ Notify users of new comments by other users.
 
 **Note:** Comment notification isn't the prettiest preview because it's just Mustachio. Since almost all content in these emails is dynamic, they don't look good without real content. So don't worry though, that's how they're supposed to look.
 
-* [Comment notification best practices guide](https://postmarkapp.com/guides/notification-email-best-practices)
+* [Comment notification best practices guide](https://postmarkapp.com/guides/comment-notification-email-best-practices)
 * [Preview &rarr;](http://assets.wildbit.com/postmark/templates/dist/comment_notification.html)
 * [Litmus test results &rarr;](https://litmus.com/pub/7ea5b37)
 
