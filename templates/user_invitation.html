@@ -3,7 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Welcome to [Product Name], {{name}}!</title>
+    <title>{{invite_sender_name}} invited you to [Product Name]</title>
     <!-- 
     The style block is collapsed on page load to save you some scrolling.
     Postmark automatically inlines all CSS properties for maximum email client 
@@ -380,7 +380,7 @@
     </style>
   </head>
   <body>
-    <span class="preheader">Thanks for trying out [Product Name]. We’ve pulled together some information and resources to help you get started.</span>
+    <span class="preheader">{{invite_sender_name}} with {{invite_sender_organization_name}} has invited you to use [Product Name] to collaborate with them.</span>
     <table class="email-wrapper" width="100%" cellpadding="0" cellspacing="0">
       <tr>
         <td align="center">
@@ -399,9 +399,8 @@
                   <!-- Body content -->
                   <tr>
                     <td class="content-cell">
-                      <h1>Welcome, {{name}}!</h1>
-                      <p>Thanks for trying [Product Name]. We’re thrilled to have you on board.</p>
-                      <p>To get the most out of [Product Name], do this primary next step:</p>
+                      <h1>Hi, {{name}}!</h1>
+                      <p>{{invite_sender_name}} with {{invite_sender_organization_name}} has invited you to use [Product Name] to collaborate with them. Use the button below to set up your account and get started:</p>
                       <!-- Action -->
                       <table class="body-action" align="center" width="100%" cellpadding="0" cellspacing="0">
                         <tr>
@@ -414,7 +413,7 @@
                                   <table border="0" cellspacing="0" cellpadding="0">
                                     <tr>
                                       <td>
-                                        <a href="{{action_url}}" class="button button--" target="_blank">Do this Next</a>
+                                        <a href="{{action_url}}" class="button button--" target="_blank">Set up account</a>
                                       </td>
                                     </tr>
                                   </table>
@@ -424,40 +423,10 @@
                           </td>
                         </tr>
                       </table>
-                      <p>For reference, here's your login information:</p>
-                      <table class="attributes" width="100%" cellpadding="0" cellspacing="0">
-                        <tr>
-                          <td class="attributes_content">
-                            <table width="100%" cellpadding="0" cellspacing="0">
-                              <tr>
-                                <td class="attributes_item"><strong>Login Page:</strong> {{login_url}}</td>
-                              </tr>
-                              <tr>
-                                <td class="attributes_item"><strong>Username:</strong> {{username}}</td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-                      <p>You've started a {{trial_length}} day trial. You can upgrade to a paying account or cancel any time.</p>
-                      <table class="attributes" width="100%" cellpadding="0" cellspacing="0">
-                        <tr>
-                          <td class="attributes_content">
-                            <table width="100%" cellpadding="0" cellspacing="0">
-                              <tr>
-                                <td class="attributes_item"><strong>Trial Start Date:</strong> {{trial_start_date}}</td>
-                              </tr>
-                              <tr>
-                                <td class="attributes_item"><strong>Trial End Date:</strong> {{trial_end_date}}</td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-                      <p>If you have any questions, feel free to <a href="mailto:{{support_email}}">email our customer success team</a>. (We're lightning quick at replying.) We also offer <a href="{{live_chat_url}}">live chat</a> during business hours.</p>
-                      <p>Thanks,
-                        <br>[Sender Name] and the [Product Name] Team</p>
-                      <p><strong>P.S.</strong> Need immediate help getting started? Check out our <a href="{{help_url}}">help documentation</a>. Or, just reply to this email, the [Product Name] support team is always ready to help!</p>
+                      <p>If you have any questions for {{invite_sender_name}}, you can reply to this email and it will go right to them. Alternatively, feel free to <a href="mailto:{{support_email}}">contact our customer success team</a> anytime. (We're lightning quick at replying.) We also offer <a href="{{live_chat_url}}">live chat</a> during business hours.</p>
+                      <p>Welcome aboard,
+                        <br>The [Product Name] Team</p>
+                      <p><strong>P.S.</strong> Need help getting started? Check out our <a href="{{help_url}}">help documentation</a>.</p>
                       <!-- Sub copy -->
                       <table class="body-sub">
                         <tr>

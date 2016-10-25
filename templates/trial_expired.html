@@ -3,7 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Welcome to [Product Name], {{name}}!</title>
+    <title>Your [Product Name] trial has expired</title>
     <!-- 
     The style block is collapsed on page load to save you some scrolling.
     Postmark automatically inlines all CSS properties for maximum email client 
@@ -380,7 +380,7 @@
     </style>
   </head>
   <body>
-    <span class="preheader">Thanks for trying out [Product Name]. We’ve pulled together some information and resources to help you get started.</span>
+    <span class="preheader">Your trial period for [Product Name] has recently expired. What would you like us to do?</span>
     <table class="email-wrapper" width="100%" cellpadding="0" cellspacing="0">
       <tr>
         <td align="center">
@@ -399,9 +399,8 @@
                   <!-- Body content -->
                   <tr>
                     <td class="content-cell">
-                      <h1>Welcome, {{name}}!</h1>
-                      <p>Thanks for trying [Product Name]. We’re thrilled to have you on board.</p>
-                      <p>To get the most out of [Product Name], do this primary next step:</p>
+                      <h1>Your [Product Name] trial expired</h1>
+                      <p>Thanks for trying [Product Name]. You've added a lot of data, so here are several options for you to consider going forward.</p>
                       <!-- Action -->
                       <table class="body-action" align="center" width="100%" cellpadding="0" cellspacing="0">
                         <tr>
@@ -414,7 +413,7 @@
                                   <table border="0" cellspacing="0" cellpadding="0">
                                     <tr>
                                       <td>
-                                        <a href="{{action_url}}" class="button button--" target="_blank">Do this Next</a>
+                                        <a href="{{action_url}}" class="button button--green" target="_blank">Upgrade your account</a>
                                       </td>
                                     </tr>
                                   </table>
@@ -424,49 +423,40 @@
                           </td>
                         </tr>
                       </table>
-                      <p>For reference, here's your login information:</p>
+                      <p>If you're not ready to upgrade to a paying account, you have a few other options available to you&hellip;</p>
                       <table class="attributes" width="100%" cellpadding="0" cellspacing="0">
                         <tr>
                           <td class="attributes_content">
                             <table width="100%" cellpadding="0" cellspacing="0">
                               <tr>
-                                <td class="attributes_item"><strong>Login Page:</strong> {{login_url}}</td>
+                                <td class="attributes_item"><strong><a href="{{trial_extension_url}}">Restart your trial</a></strong> - If you didn't get a chance to fully try out the product or need a little more time to evaluate, just let us know. Simply reply to this email and we'll extend your trial period.
+                                  <br>
+                                  <br>
+                                </td>
                               </tr>
                               <tr>
-                                <td class="attributes_item"><strong>Username:</strong> {{username}}</td>
+                                <td class="attributes_item"><strong><a href="{{feedback_url}}">Share feedback</a></strong> - If [Product Name] isn't right for you, let us know what you were looking for and we might be able to suggest some alternatives that might be a better fit.
+                                  <br>
+                                  <br>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="attributes_item"><strong><a href="{{export_url}}">Export your data</a></strong> - If [Product Name] wasn't a good fit, you can export your data for use elsewhere.
+                                  <br>
+                                  <br>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="attributes_item"><strong><a href="{{close_account_url}}">Close your account</a></strong> - You can close your account and delete your data. Or, do nothing and we'll automatically close it and delete your data for you in 90 days. But don't worry, we'll send you another email before that happens.</td>
                               </tr>
                             </table>
                           </td>
                         </tr>
                       </table>
-                      <p>You've started a {{trial_length}} day trial. You can upgrade to a paying account or cancel any time.</p>
-                      <table class="attributes" width="100%" cellpadding="0" cellspacing="0">
-                        <tr>
-                          <td class="attributes_content">
-                            <table width="100%" cellpadding="0" cellspacing="0">
-                              <tr>
-                                <td class="attributes_item"><strong>Trial Start Date:</strong> {{trial_start_date}}</td>
-                              </tr>
-                              <tr>
-                                <td class="attributes_item"><strong>Trial End Date:</strong> {{trial_end_date}}</td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-                      <p>If you have any questions, feel free to <a href="mailto:{{support_email}}">email our customer success team</a>. (We're lightning quick at replying.) We also offer <a href="{{live_chat_url}}">live chat</a> during business hours.</p>
+                      <p>Regardless of your choice, we want to say thank you for trying [Product Name]. We know it's an investment of your time, and we appreciate you giving us a chance.</p>
                       <p>Thanks,
                         <br>[Sender Name] and the [Product Name] Team</p>
-                      <p><strong>P.S.</strong> Need immediate help getting started? Check out our <a href="{{help_url}}">help documentation</a>. Or, just reply to this email, the [Product Name] support team is always ready to help!</p>
-                      <!-- Sub copy -->
-                      <table class="body-sub">
-                        <tr>
-                          <td>
-                            <p class="sub">If you’re having trouble with the button above, copy and paste the URL below into your web browser.</p>
-                            <p class="sub">{{action_url}}</p>
-                          </td>
-                        </tr>
-                      </table>
+                      <p><strong>P.S.</strong> If you have any questions or need any help, please don't hesitate to reach out. You can reply to this email or join us on live chat during business hours.</p>
                     </td>
                   </tr>
                 </table>
