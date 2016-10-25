@@ -44,9 +44,9 @@ If you have any questions about this receipt, simply reply to this email or reac
 Cheers,
 The [Product Name] Team
 
-Download as PDF ( %5C{{ action_url }} )
+Download as PDF ( {{ action_url }} )
 
-Need a printable copy for your records? You can download a PDF version ( {{ action_url%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20 }} ).
+Need a printable copy for your records? You can download a PDF version ( {{ action_url }} ).
 
 Moved recently? Have a new credit card? You can easily update your billing information ( {{ billing_url }} ).
 

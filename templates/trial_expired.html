@@ -3,13 +3,13 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Your {{product_name}} trial has expired</title>
+    <title>Your [Product Name] trial has expired</title>
     <!-- 
-    The <style> block is collapsed on page load to save you some scrolling.
+    The style block is collapsed on page load to save you some scrolling.
     Postmark automatically inlines all CSS properties for maximum email client 
     compatibility. You can just update styles here, and Postmark does the rest.
     -->
-    <style>
+    <style type="text/css" rel="stylesheet" media="all">
     /* Base ------------------------------ */
     
     *:not(br):not(tr):not(html) {
@@ -143,21 +143,21 @@
     }
     /* Attribute list ------------------------------ */
     
-    .attribute-list {
+    .attributes {
       margin: 0 0 21px;
     }
     
-    .attribute-list .attribute-list-container {
+    .attributes_content {
       background-color: #EDEFF2;
       padding: 16px;
     }
     
-    .attribute-list-item {
+    .attributes_item {
       padding: 0;
     }
     /* Related Items ------------------------------ */
     
-    .related-wrapper {
+    .related {
       width: 100%;
       margin: 0;
       padding: 25px 0 0 0;
@@ -166,36 +166,31 @@
       -premailer-cellspacing: 0;
     }
     
-    .related-wrapper img {
-      display: block;
-      padding-bottom: 10px;
-    }
-    
-    .related-wrapper strong {
-      display: block;
-    }
-    
-    .related-wrapper .related-item {
-      align: center;
+    .related_item {
       padding: 10px 0;
       color: #74787E;
       font-size: 15px;
       line-height: 18px;
     }
     
-    .related-heading {
-      border-top: 1px solid #EDEFF2;
-      text-align: center;
-      padding-top: 25px;
+    .related_item-title {
+      display: block;
+      margin: .5em 0 0;
+    }
+    
+    .related_item-thumb {
+      display: block;
       padding-bottom: 10px;
     }
     
-    .related-heading h2 {
-      display: inline;
+    .related_heading {
+      border-top: 1px solid #EDEFF2;
+      text-align: center;
+      padding: 25px 0 10px;
     }
     /* Discount Code ------------------------------ */
     
-    .body-discount {
+    .discount {
       width: 100%;
       margin: 0;
       padding: 24px;
@@ -206,36 +201,33 @@
       border: 2px dashed #9BA2AB;
     }
     
-    .body-discount h1,
-    .body-discount p {
+    .discount_heading {
       text-align: center;
     }
     
-    .body-discount p {
-      font-size: 90%;
+    .discount_body {
+      text-align: center;
+      font-size: 15px;
     }
     /* Social Icons ------------------------------ */
     
-    .social-links {
+    .social {
       width: auto;
     }
     
-    .social-links td {
+    .social td {
       padding: 0;
       width: auto;
     }
     
-    .social-image {
+    .social_icon {
       height: 20px;
-      margin-top: 0;
-      margin-right: 8px;
-      margin-bottom: 10px;
-      margin-left: 8px;
+      margin: 0 8px 10px 8px;
       padding: 0;
     }
     /* Data table ------------------------------ */
     
-    .purchase-wrapper {
+    .purchase {
       width: 100%;
       margin: 0;
       padding: 35px 0;
@@ -244,7 +236,7 @@
       -premailer-cellspacing: 0;
     }
     
-    .purchase-table {
+    .purchase_content {
       width: 100%;
       margin: 0;
       padding: 25px 0 0 0;
@@ -253,37 +245,37 @@
       -premailer-cellspacing: 0;
     }
     
-    .purchase-table th {
-      padding-bottom: 8px;
-      border-bottom: 1px solid #EDEFF2;
-    }
-    
-    .purchase-table th p {
-      margin: 0;
-      color: #9BA2AB;
-      font-size: 12px;
-    }
-    
-    .purchase-table td {
+    .purchase_item {
       padding: 10px 0;
       color: #74787E;
       font-size: 15px;
       line-height: 18px;
     }
     
-    .total-cell {
+    .purchase_heading {
+      padding-bottom: 8px;
+      border-bottom: 1px solid #EDEFF2;
+    }
+    
+    .purchase_heading p {
+      margin: 0;
+      color: #9BA2AB;
+      font-size: 12px;
+    }
+    
+    .purchase_footer {
       padding-top: 15px;
       border-top: 1px solid #EDEFF2;
     }
     
-    .total-cell p {
+    .purchase_total {
       margin: 0;
       text-align: right;
       font-weight: bold;
       color: #2F3133;
     }
     
-    .total-cell_label {
+    .purchase_total--label {
       padding: 0 15px 0 0;
     }
     /* Utilities ------------------------------ */
@@ -388,7 +380,7 @@
     </style>
   </head>
   <body>
-    <span class="preheader">Your trial period for {{product_name}} has recently expired. What would you like us to do?</span>
+    <span class="preheader">Your trial period for [Product Name] has recently expired. What would you like us to do?</span>
     <table class="email-wrapper" width="100%" cellpadding="0" cellspacing="0">
       <tr>
         <td align="center">
@@ -421,7 +413,7 @@
                                   <table border="0" cellspacing="0" cellpadding="0">
                                     <tr>
                                       <td>
-                                        <a href="http://example.com" class="button button--green" target="_blank">Upgrade your account</a>
+                                        <a href="{{action_url}}" class="button button--green" target="_blank">Upgrade your account</a>
                                       </td>
                                     </tr>
                                   </table>
@@ -432,30 +424,30 @@
                         </tr>
                       </table>
                       <p>If you're not ready to upgrade to a paying account, you have a few other options available to you&hellip;</p>
-                      <table class="attribute-list" width="100%" cellpadding="0" cellspacing="0">
+                      <table class="attributes" width="100%" cellpadding="0" cellspacing="0">
                         <tr>
-                          <td class="attribute-list-container">
+                          <td class="attributes_content">
                             <table width="100%" cellpadding="0" cellspacing="0">
                               <tr>
-                                <td class="attribute-list-item"><strong><a href="{{trial_extension_url}}">Restart your trial</a></strong> - If you didn't get a chance to fully try out the product or need a little more time to evaluate, just let us know. Simply reply to this email and we'll extend your trial period.
+                                <td class="attributes_item"><strong><a href="{{trial_extension_url}}">Restart your trial</a></strong> - If you didn't get a chance to fully try out the product or need a little more time to evaluate, just let us know. Simply reply to this email and we'll extend your trial period.
                                   <br>
                                   <br>
                                 </td>
                               </tr>
                               <tr>
-                                <td class="attribute-list-item"><strong><a href="{{feedback_url}}">Share feedback</a></strong> - If [Product Name] isn't right for you, let us know what you were looking for and we might be able to suggest some alternatives that might be a better fit.
+                                <td class="attributes_item"><strong><a href="{{feedback_url}}">Share feedback</a></strong> - If [Product Name] isn't right for you, let us know what you were looking for and we might be able to suggest some alternatives that might be a better fit.
                                   <br>
                                   <br>
                                 </td>
                               </tr>
                               <tr>
-                                <td class="attribute-list-item"><strong><a href="{{export_url}}">Export your data</a></strong> - If [Product Name] wasn't a good fit, you can export your data for use elsewhere.
+                                <td class="attributes_item"><strong><a href="{{export_url}}">Export your data</a></strong> - If [Product Name] wasn't a good fit, you can export your data for use elsewhere.
                                   <br>
                                   <br>
                                 </td>
                               </tr>
                               <tr>
-                                <td class="attribute-list-item"><strong><a href="{{close_account_url}}">Close your account</a></strong> - You can close your account and delete your data. Or, do nothing and we'll automatically close it and delete your data for you in 90 days. But don't worry, we'll send you another email before that happens.</td>
+                                <td class="attributes_item"><strong><a href="{{close_account_url}}">Close your account</a></strong> - You can close your account and delete your data. Or, do nothing and we'll automatically close it and delete your data for you in 90 days. But don't worry, we'll send you another email before that happens.</td>
                               </tr>
                             </table>
                           </td>

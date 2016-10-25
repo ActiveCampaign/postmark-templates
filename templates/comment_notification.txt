@@ -4,7 +4,7 @@
 
 {{#each . }}
 
-{{attachment_name}} ( {{ attachmenet_url }} ) ({{attachment_size}} {{attachment_type}})
+{{attachment_name}} ( {{ attachmnet_url }} ) ({{attachment_size}} {{attachment_type}})
 
 {{/each}}
 
@@ -12,4 +12,4 @@
 
 By {{commenter_name}} at {{timestamp}}
 
-View the comment ( {{ action_url }} ) or Manage notifications ( {{ notifciations_url }} )
+View the comment ( {{ action_url }} ) or Manage notifications ( {{ notifications_url }} )

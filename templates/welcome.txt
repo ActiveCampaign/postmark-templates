@@ -1,4 +1,4 @@
-Thanks for trying out {{product_name}}. We've pulled together some information and resources to help you get started.
+Thanks for trying out [Product Name]. We’ve pulled together some information and resources to help you get started.
 
 [Product Name] ( https://example.com )
 
@@ -10,7 +10,7 @@ Thanks for trying [Product Name]. We’re thrilled to have you on board.
 
 To get the most out of [Product Name], do this primary next step:
 
-Do this Next ( http://example.com )
+Do this Next ( {{ action_url }} )
 
 For reference, here's your login information:
 
@@ -33,7 +33,7 @@ P.S. Need immediate help getting started? Check out our help documentation ( {{ 
 
 If you’re having trouble with the button above, copy and paste the URL below into your web browser.
 
-{{action_url}} ( )
+{{action_url}}
 
 © 2016 [Product Name]. All rights reserved.
 

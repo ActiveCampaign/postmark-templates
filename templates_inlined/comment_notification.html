@@ -39,13 +39,13 @@ width: 100% !important; height: 100%; margin: 0; line-height: 1.4; background-co
                       {{body}}
                       <br />
                       <br /> {{#attachment_details}}
-                      <table class="attribute-list" width="100%" cellpadding="0" cellspacing="0" style="box-sizing: border-box; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; margin: 0 0 21px;">
+                      <table class="attributes" width="100%" cellpadding="0" cellspacing="0" style="box-sizing: border-box; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; margin: 0 0 21px;">
                         <tr>
-                          <td class="attribute-list-container" style="box-sizing: border-box; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; padding: 16px;" bgcolor="#EDEFF2">
+                          <td class="attributes_content" style="box-sizing: border-box; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; padding: 16px;" bgcolor="#EDEFF2">
                             <table width="100%" cellpadding="0" cellspacing="0" style="box-sizing: border-box; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">
                               {{#each . }}
                               <tr>
-                                <td class="attribute-list-item" style="box-sizing: border-box; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; padding: 0;"><a href="{{attachmenet_url}}" style="box-sizing: border-box; color: #3869D4; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">{{attachment_name}}</a> <span style="box-sizing: border-box; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">({{attachment_size}} {{attachment_type}})</span></td>
+                                <td class="attributes_item" style="box-sizing: border-box; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; padding: 0;"><a href="{{attachmnet_url}}" style="box-sizing: border-box; color: #3869D4; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">{{attachment_name}}</a> <span style="box-sizing: border-box; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">({{attachment_size}} {{attachment_type}})</span></td>
                               </tr>
                               {{/each}}
                             </table>
@@ -63,7 +63,7 @@ width: 100% !important; height: 100%; margin: 0; line-height: 1.4; background-co
             <tr>
               <td class="content-cell" style="box-sizing: border-box; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; padding: 35px;">
                 <p style="box-sizing: border-box; color: #AEAEAE; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 16px; line-height: 1.5em; margin-top: 0;" align="left">By {{commenter_name}} at {{timestamp}}</p>
-                <p class="sub" style="box-sizing: border-box; color: #AEAEAE; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 1.5em; margin-top: 0;" align="left"><a href="{{action_url}}" style="box-sizing: border-box; color: #3869D4; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">View the comment</a> or <a href="{{notifciations_url}}" style="box-sizing: border-box; color: #3869D4; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">Manage  notifications</a></p>
+                <p class="sub" style="box-sizing: border-box; color: #AEAEAE; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 1.5em; margin-top: 0;" align="left"><a href="{{action_url}}" style="box-sizing: border-box; color: #3869D4; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">View the comment</a> or <a href="{{notifications_url}}" style="box-sizing: border-box; color: #3869D4; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">Manage notifications</a></p>
               </td>
             </tr>
           </table>

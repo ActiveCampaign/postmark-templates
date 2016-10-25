@@ -1,4 +1,4 @@
-Your trial period for {{product_name}} has recently expired. What would you like us to do?
+Your trial period for [Product Name] has recently expired. What would you like us to do?
 
 [Product Name] ( https://example.com )
 
@@ -8,7 +8,7 @@ Your [Product Name] trial expired
 
 Thanks for trying [Product Name]. You've added a lot of data, so here are several options for you to consider going forward.
 
-Upgrade your account ( http://example.com )
+Upgrade your account ( {{ action_url }} )
 
 If you're not ready to upgrade to a paying account, you have a few other options available to you…
 

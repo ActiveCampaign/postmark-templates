@@ -12,7 +12,7 @@ Amount Due: {{total}}
 
 Due By: {{due_date}}
 
-Pay this Invoice ( %5C{{ action_url }} )
+Pay this Invoice ( {{ action_url }} )
 
 {{invoice_id}}
 --------------
@@ -42,7 +42,7 @@ The [Product Name] Team
 
 If you’re having trouble with the button above, copy and paste the URL below into your web browser.
 
-{{action_url}} ( )
+{{action_url}}
 
 © 2016 [Product Name]. All rights reserved.
 
