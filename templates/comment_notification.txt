@@ -4,7 +4,7 @@
 
 {{#each . }}
 
-{{attachment_name}} ( {{ attachmnet_url }} ) ({{attachment_size}} {{attachment_type}})
+{{attachment_name}} ( {{ attachment_url }} ) ({{attachment_size}} {{attachment_type}})
 
 {{/each}}
 
