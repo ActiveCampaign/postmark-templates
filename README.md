@@ -1,6 +1,10 @@
-<img src="http://assets.wildbit.com/postmark/misc/starter-templates-icon@2x.png" alt="Postmark Transactional Email Templates" width="147" height="147">
+<img src="http://assets.wildbit.com/postmark/misc/starter-templates-icon@2x.png" alt="Postmark Transactional Email Templates" width="147" height="147" align="right">
+
 # Postmark Transactional Email Templates
-Content ready, mobile friendly, and beautiful across all major email clients.
+Brought to you by
+<a href="http://postmarkapp.com"><img src="http://assets.wildbit.com/postmark/misc/postmark.svg" alt="Postmark"></a>
+
+**Content ready, mobile friendly, and beautiful across all major email clients.**
 
 #### What's this for?
 
