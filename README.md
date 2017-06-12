@@ -1,4 +1,4 @@
-<img src="http://assets.wildbit.com/postmark/misc/starter-templates-icon@2x.png" alt="Postmark Transactional Email Templates" width="147" height="147" align="right">
+<img src="http://assets.wildbit.com/postmark/misc/templates-logo@2x.png" alt="Postmark Transactional Email Templates" width="148" height="148" align="right">
 
 # Postmark Transactional Email Templates
 Brought to you by
