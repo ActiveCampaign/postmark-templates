@@ -8,7 +8,7 @@ Brought to you by
 
 #### What's this for?
 
-*Postmark Transactional Email Templates* are rock-solid email templates that render beautifully in tons of email clients. They provide the foundation of our [Postmark Templates](http://blog.postmarkapp.com/post/125849089273/special-delivery-postmark-templates) feature, and we're glad to provide them as Open Source to the wider community.
+*Postmark Transactional Email Templates* are rock-solid email templates that render beautifully in tons of email clients. They provide the foundation of our [Postmark Templates](https://postmarkapp.com/blog/special-delivery-postmark-templates) feature, and we're glad to provide them as Open Source to the wider community.
 
 These templates are built and maintained using [MailMason](https://github.com/wildbit/mailmason), a grunt-based framework to help streamline the process of developing, testing, and maintaining a set of related transactional email templates. If you want to create or customize your own set of email templates, you can use MailMason to extend the existing emails or start from scratch to build an entirely new set.
 
