@@ -50,7 +50,7 @@ Need a printable copy for your records? You can download a PDF version ( {{ acti
 
 Moved recently? Have a new credit card? You can easily update your billing information ( {{ billing_url }} ).
 
-© 2017 [Product Name]. All rights reserved.
+© 2018 [Product Name]. All rights reserved.
 
 [Company Name, LLC]
 
