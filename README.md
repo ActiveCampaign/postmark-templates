@@ -49,35 +49,30 @@ The templates are listed below and have all been tested for consistency in the f
 Send a welcome email to users after they sign up.
 
 * [Welcome email best practices guide](https://postmarkapp.com/guides/welcome-email-best-practices)
-* [Litmus test results](https://litmus.com/pub/a087bdc)
 
 ### [Reset Password](http://assets.wildbit.com/postmark/templates/dist/password_reset.html) 
 
   Send users a link to reset their password.
   
   * [Reset password best practices guide](https://postmarkapp.com/guides/password-reset-email-best-practices)
-  * [Litmus test results](https://litmus.com/pub/c4ee0e9)
 
 ### [Reset Password Help](http://assets.wildbit.com/postmark/templates/dist/password_reset_help.html)
 
   Help users reset their password if they can’t remember their email.
 
   * [Reset password best practices guide](https://postmarkapp.com/guides/password-reset-email-best-practices)
-  * [Litmus test results](https://litmus.com/pub/82b4127)
 
 ### [Receipt](http://assets.wildbit.com/postmark/templates/dist/receipt.html)
 
   Send a receipt to users after they made a purchase.
 
   * [Receipt and invoices best practices guide](https://postmarkapp.com/guides/receipt-and-invoice-email-best-practices)
-  * [Litmus test results](https://litmus.com/pub/dc65df0)
 
 ### [Invoice](http://assets.wildbit.com/postmark/templates/dist/invoice.html)
 
   Request payment from a user.
 
   * [Receipt and invoices best practices guide](https://postmarkapp.com/guides/receipt-and-invoice-email-best-practices)
-  * [Litmus test results](https://litmus.com/pub/877016b)
 
 ### [Comment notification](http://assets.wildbit.com/postmark/templates/dist/comment_notification.html)
 
@@ -86,25 +81,21 @@ Notify users of new comments by other users.
 **Note:** Comment notification isn't the prettiest preview because it's just [Mustachio](https://github.com/wildbit/mustachio). Since almost all content in this email is dynamic, it won't look good without real content. Don't worry though, that's how it's supposed to look.
 
 * [Comment notification best practices guide](https://postmarkapp.com/guides/comment-notification-email-best-practices)
-* [Litmus test results](https://litmus.com/pub/d7008f1)
 
 ### [Trial Expiring](http://assets.wildbit.com/postmark/templates/dist/trial_expiring.html)
 
   Let users know when their trial is about to expire.
 
   * [Trial expiration email best pracitces](https://postmarkapp.com/guides/trial-expiration-email-best-practices)
-  * [Litmus test results](https://litmus.com/pub/cd363ec)
 
 ### [Trial Expired](http://assets.wildbit.com/postmark/templates/dist/trial_expired.html)
 
   Let users know when their expired trial.
 
   * [Trial expiration email best pracitces](https://postmarkapp.com/guides/trial-expiration-email-best-practices)
-  * [Litmus test results](https://litmus.com/pub/30fb01d)
 
 ### [User Invitation](http://assets.wildbit.com/postmark/templates/dist/user_invitation.html)
 
   Help users invite others to use your software.
 
 * [User invitation email best practices](https://postmarkapp.com/guides/user-invitation-email-best-practices)
-* [Litmus test results](https://litmus.com/pub/ac67c0c)
