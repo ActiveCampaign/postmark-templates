@@ -20,7 +20,7 @@ There are two sets of templates here. The first set is in the `/templates` folde
 For client compatibility, HTML emails should always be inlined before sending. Here are a couple of tools for doing that:
 
 * [Postmark Style Merge](https://github.com/wildbit/style-merge)
-* [Premailer](https://github.com/peterbe/premailer)
+* [Premailer](https://github.com/premailer/premailer)
 
 If you choose to send your emails with [Postmark](http://postmarkapp.com), each time you send we will automagically inline the CSS for you.
 
