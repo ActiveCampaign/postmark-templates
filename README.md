@@ -14,7 +14,7 @@ These templates are built and maintained using [MailMason](https://github.com/wi
 
 ## CSS & Inlining
 
-There are two sets of templates here. The first set is in the `/templates` folder and contains the base templates with the CSS all contained in a style block. In this state, they're easier to edit, but they'll have limited compatibility with email clients. The other set in `/templates_inlined` has the same templates but with the CSS already inlined. They'll be a bit more tedious to make changes to, but you won't need to use anything to inline the CSS.
+There are two sets of templates here. The first set is in the `/templates` folder and contains the base templates with the CSS all contained in a style block. In this state, they're easier to edit, but they'll have limited compatibility with email clients. The other set in `/templates-inlined` has the same templates but with the CSS already inlined. They'll be a bit more tedious to make changes to, but you won't need to use anything to inline the CSS.
 
 ### Inline the CSS
 For client compatibility, HTML emails should always be inlined before sending. Here are a couple of tools for doing that:
@@ -26,7 +26,79 @@ If you choose to send your emails with [Postmark](http://postmarkapp.com), each 
 
 ## The Templates
 
-The templates are listed below and have all been tested for consistency in the following email clients:
+Each template comes in three different generic layout variations: Basic, Basic full, and Plain. This gives you a starting point so that you can customize your templates to match your brand.
+
+<img src="https://github.com/wildbit/postmark-templates/raw/1.0.0/media/starter-templates@2x.png" max-width="100%" alt="Starter templates side-by-side: Basic, basic full, and plain">
+<img src="https://github.com/wildbit/postmark-templates/raw/1.0.0/media/dark-mode@2x.png" max-width="100%" alt="Dark mode compatibility">
+
+
+### Welcome
+
+  Send a welcome email to users after they sign up.
+
+  * 💌 Preview with layout: [Basic](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic/welcome/content.html), [Basic full](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic-full/welcome/content.html), [Plain](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/plain/welcome/content.html)
+  * 📔 [Welcome email best practices guide](https://postmarkapp.com/guides/welcome-email-best-practices)
+
+### Reset Password
+
+  Send users a link to reset their password.
+
+  * 💌 Preview with layout: [Basic](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic/password-reset/content.html), [Basic full](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic-full/password-reset/content.html), [Plain](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/plain/password-reset/content.html)
+  * 📔 [Reset password best practices guide](https://postmarkapp.com/guides/password-reset-email-best-practices)
+
+### Reset Password Help
+
+  Help users reset their password if they can’t remember their email.
+
+  * 💌 Preview with layout: [Basic](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic/password-reset-help/content.html), [Basic full](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic-full/password-reset-help/content.html), [Plain](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/plain/password-reset-help/content.html)
+  * 📔 [Reset password best practices guide](https://postmarkapp.com/guides/password-reset-email-best-practices)
+
+### Receipt
+
+  Send a receipt to users after they made a purchase.
+
+  * 💌 Preview with layout: [Basic](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic/receipt/content.html), [Basic full](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic-full/receipt/content.html), [Plain](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/plain/receipt/content.html)
+  * 📔 [Receipt and invoices best practices guide](https://postmarkapp.com/guides/receipt-and-invoice-email-best-practices)
+
+### Invoice
+
+  Request payment from a user.
+
+  * 💌 Preview with layout: [Basic](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic/invoice/content.html), [Basic full](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic-full/invoice/content.html), [Plain](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/plain/invoice/content.html)
+  * 📔 [Receipt and invoices best practices guide](https://postmarkapp.com/guides/receipt-and-invoice-email-best-practices)
+
+### Comment notification
+
+Notify users of new comments by other users.
+
+**Note:** Comment notification isn't the prettiest preview because it's just [Mustachio](https://github.com/wildbit/mustachio). Since almost all content in this email is dynamic, it won't look good without real content. Don't worry though, that's how it's supposed to look.
+
+  * 💌 Preview with layout: [Basic](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic/comment-notification/content.html), [Basic full](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic-full/comment-notification/content.html), [Plain](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/plain/comment-notification/content.html)
+  * 📔 [Comment notification best practices guide](https://postmarkapp.com/guides/comment-notification-email-best-practices)
+
+### Trial Expiring
+
+  Let users know when their trial is about to expire.
+
+  * 💌 Preview with layout: [Basic](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic/trial-expiring/content.html), [Basic full](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic-full/trial-expiring/content.html), [Plain](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/plain/trial-expiring/content.html)
+  * 📔 [Trial expiration email best pracitces](https://postmarkapp.com/guides/trial-expiration-email-best-practices)
+
+### Trial Expired
+
+  Let users know when their expired trial.
+
+  * 💌 Preview with layout: [Basic](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic/trial-expired/content.html), [Basic full](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic-full/trial-expired/content.html), [Plain](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/plain/trial-expired/content.html)
+  * 📔 [Trial expiration email best pracitces](https://postmarkapp.com/guides/trial-expiration-email-best-practices)
+
+### User Invitation
+
+  Help users invite others to use your software.
+
+  * 💌 Preview with layout: [Basic](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic/user-invitation/content.html), [Basic full](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic-full/user-invitation/content.html), [Plain](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/plain/user-invitation/content.html)
+  * 📔 [User invitation email best practices](https://postmarkapp.com/guides/user-invitation-email-best-practices)
+
+
+We've also made sure that these have been tested for consistency in the following email clients:
 
 * Desktop
   * Apple Mail 9, 10, 11
@@ -43,59 +115,3 @@ The templates are listed below and have all been tested for consistency in the f
   * Gmail
   * Outlook.com
   * Yahoo
-
-### [Welcome](http://assets.wildbit.com/postmark/templates/dist/welcome.html)
-
-Send a welcome email to users after they sign up.
-
-* [Welcome email best practices guide](https://postmarkapp.com/guides/welcome-email-best-practices)
-
-### [Reset Password](http://assets.wildbit.com/postmark/templates/dist/password_reset.html) 
-
-  Send users a link to reset their password.
-  
-  * [Reset password best practices guide](https://postmarkapp.com/guides/password-reset-email-best-practices)
-
-### [Reset Password Help](http://assets.wildbit.com/postmark/templates/dist/password_reset_help.html)
-
-  Help users reset their password if they can’t remember their email.
-
-  * [Reset password best practices guide](https://postmarkapp.com/guides/password-reset-email-best-practices)
-
-### [Receipt](http://assets.wildbit.com/postmark/templates/dist/receipt.html)
-
-  Send a receipt to users after they made a purchase.
-
-  * [Receipt and invoices best practices guide](https://postmarkapp.com/guides/receipt-and-invoice-email-best-practices)
-
-### [Invoice](http://assets.wildbit.com/postmark/templates/dist/invoice.html)
-
-  Request payment from a user.
-
-  * [Receipt and invoices best practices guide](https://postmarkapp.com/guides/receipt-and-invoice-email-best-practices)
-
-### [Comment notification](http://assets.wildbit.com/postmark/templates/dist/comment_notification.html)
-
-Notify users of new comments by other users.
-
-**Note:** Comment notification isn't the prettiest preview because it's just [Mustachio](https://github.com/wildbit/mustachio). Since almost all content in this email is dynamic, it won't look good without real content. Don't worry though, that's how it's supposed to look.
-
-* [Comment notification best practices guide](https://postmarkapp.com/guides/comment-notification-email-best-practices)
-
-### [Trial Expiring](http://assets.wildbit.com/postmark/templates/dist/trial_expiring.html)
-
-  Let users know when their trial is about to expire.
-
-  * [Trial expiration email best pracitces](https://postmarkapp.com/guides/trial-expiration-email-best-practices)
-
-### [Trial Expired](http://assets.wildbit.com/postmark/templates/dist/trial_expired.html)
-
-  Let users know when their expired trial.
-
-  * [Trial expiration email best pracitces](https://postmarkapp.com/guides/trial-expiration-email-best-practices)
-
-### [User Invitation](http://assets.wildbit.com/postmark/templates/dist/user_invitation.html)
-
-  Help users invite others to use your software.
-
-* [User invitation email best practices](https://postmarkapp.com/guides/user-invitation-email-best-practices)

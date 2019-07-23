@@ -1,0 +1,42 @@
+Thanks for trying out [Product Name]. We’ve pulled together some information and resources to help you get started.
+
+[Product Name] ( https://example.com )
+
+******************
+Welcome, {{name}}!
+******************
+
+Thanks for trying [Product Name]. We’re thrilled to have you on board. To get the most out of [Product Name], do this primary next step:
+
+Do this Next ( {{ action_url }} )
+
+For reference, here's your login information:
+
+Login Page: {{login_url}}
+
+Username: {{username}}
+
+You've started a {{trial_length}} day trial. You can upgrade to a paying account or cancel any time.
+
+Trial Start Date: {{trial_start_date}}
+
+Trial End Date: {{trial_end_date}}
+
+If you have any questions, feel free to email our customer success team ( {{ support_email }} ). (We're lightning quick at replying.) We also offer live chat ( {{ live_chat_url }} ) during business hours.
+
+Thanks,
+[Sender Name] and the [Product Name] Team
+
+P.S. Need immediate help getting started? Check out our help documentation ( {{ help_url }} ). Or, just reply to this email, the [Product Name] support team is always ready to help!
+
+If you’re having trouble with the button above, copy and paste the URL below into your web browser.
+
+{{action_url}}
+
+© 2019 [Product Name]. All rights reserved.
+
+[Company Name, LLC]
+
+1234 Street Rd.
+
+Suite 1234

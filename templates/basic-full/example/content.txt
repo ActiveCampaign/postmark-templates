@@ -1,0 +1,120 @@
+This is example text for the preheader set via the YAML front-matter for each email.
+
+[Product Name] ( https://example.com )
+
+***************************
+Escaped Handlebars Brackets
+***************************
+
+Working with templates, you'll occasionally need to put some Mustachio ( https://github.com/wildbit/mustachio ) code in your Handlebars templates. To prevent the Handlebars processing from attempting to process your Mustachio code, you'll need to escape the curly braces by adding a backslash just before the opening curly braces.
+
+\{{ something }} will turn into {{ something }}
+
+*******
+Headers
+*******
+
+********
+Header 1
+********
+
+--------
+Header 2
+--------
+
+--------
+Header 3
+--------
+
+***************************
+Paragraphs & Formatting
+***************************
+
+Transactional email is fun for the whole family! You can design it, write it, code it, and test it. And test it. And test it. And send it. And find a bug.
+
+This paragraph has some bold text and strong text along with italicized text and emphasized text.
+
+*****
+Lists
+*****
+
+* Unordered list item 1
+* Unordered list item 2
+* Unordered list item 3
+
+* Ordered list item 1
+* Ordered list item 2
+* Ordered list item 3
+
+**************
+Action Buttons
+**************
+
+Danger Button ( http://example.com )
+
+Success button ( http://example.com )
+
+Default button ( http://example.com )
+
+**************
+Attribute List
+**************
+
+If your email client baseline is sufficiently modern, you can achieve the same effects with list much more succinctly. We chose to use tables for these lists to accommodate Outlook 2007, 2010, and 2013.
+
+Login Page: {{login_url}}
+
+Username: {{username}}
+
+***********
+Option List
+***********
+
+For the most part, option lists are just like attribute lists. They just use line breaks to create some separation between the items.
+
+Restart your trial ( {{ trial_extension_url }} ) - If you didn't get a chance to fully try out the product or need a little more time to evaluate, just let us know. Simply reply to this email and we'll extend your trial period.
+
+Share feedback ( {{ feedback_url }} ) - If [Product Name] isn't right for you, let us know what you were looking for and we might be able to suggest some alternatives that might be a better fit.
+
+***************
+Example Closing
+***************
+
+Thanks,
+[Sender Name] and the [Product Name] Team
+
+P.S. Need help getting started? Check out our help documentation. Or, just reply to this email with any questions or issues you have. The [Product Name] support team is always excited to help you.
+
+*************
+Discount Code
+*************
+
+***************************
+10% off your next purchase!
+***************************
+
+Thanks for your support! Here's a coupon for 10% off your next purchase if used by {{expiration_date}}.
+
+Use this discount now... ( http://example.com )
+
+*************
+Related Items
+*************
+
+********
+Sub-text
+********
+
+Sub-text is for any content that needs to be included at the bottom of the email but doesn't need to stand out. This can be good for disclaimers and text alternatives.
+
+If you’re having trouble clicking the confirm account button, copy and paste the URL below into your web browser.
+
+{{action_url}} ( {{ action_url }} )
+
+© 2019 [Product Name]. All rights reserved.
+
+[Company Name, LLC]
+
+1234 Street Rd.
+
+Suite 1234
