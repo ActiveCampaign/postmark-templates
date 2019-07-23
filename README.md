@@ -28,8 +28,8 @@ If you choose to send your emails with [Postmark](http://postmarkapp.com), each 
 
 Each template comes in three different generic layout variations: Basic, Basic full, and Plain. This gives you a starting point so that you can customize your templates to match your brand.
 
-<img src="https://github.com/wildbit/postmark-templates/raw/1.0.0/media/starter-templates@2x.png" max-width="100%" alt="Starter templates side-by-side: Basic, basic full, and plain">
-<img src="https://github.com/wildbit/postmark-templates/raw/1.0.0/media/dark-mode@2x.png" max-width="100%" alt="Dark mode compatibility">
+<img src="https://github.com/wildbit/postmark-templates/raw/master/media/starter-templates@2x.png" max-width="100%" alt="Starter templates side-by-side: Basic, basic full, and plain">
+<img src="https://github.com/wildbit/postmark-templates/raw/master/media/dark-mode@2x.png" max-width="100%" alt="Dark mode compatibility">
 
 
 ### Welcome
