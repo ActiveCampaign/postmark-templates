@@ -81,7 +81,7 @@ Notify users of new comments by other users.
   Let users know when their trial is about to expire.
 
   * 💌 Preview with layout: [Basic](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic/trial-expiring/content.html), [Basic full](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic-full/trial-expiring/content.html), [Plain](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/plain/trial-expiring/content.html)
-  * [Trial expiration email best pracitces](https://postmarkapp.com/guides/trial-expiration-email-best-practices)
+  * 📔 [Trial expiration email best pracitces](https://postmarkapp.com/guides/trial-expiration-email-best-practices)
 
 ### Trial Expired
 
