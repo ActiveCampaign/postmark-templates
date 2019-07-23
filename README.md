@@ -39,35 +39,35 @@ Each template comes in three different generic layout variations: Basic, Basic f
   * Preview with layout: [Basic](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic/welcome/content.html), [Basic full](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic-full/welcome/content.html), [Plain](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/plain/welcome/content.html)
   * [Welcome email best practices guide](https://postmarkapp.com/guides/welcome-email-best-practices)
 
-### [Reset Password](http://assets.wildbit.com/postmark/templates/dist/password_reset.html) 
+### Reset Password
 
   Send users a link to reset their password.
 
   * Preview with layout: [Basic](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic/password-reset/content.html), [Basic full](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic-full/password-reset/content.html), [Plain](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/plain/password-reset/content.html)
   * [Reset password best practices guide](https://postmarkapp.com/guides/password-reset-email-best-practices)
 
-### [Reset Password Help](http://assets.wildbit.com/postmark/templates/dist/password_reset_help.html)
+### Reset Password Help
 
   Help users reset their password if they can’t remember their email.
 
   * Preview with layout: [Basic](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic/password-reset-help/content.html), [Basic full](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic-full/password-reset-help/content.html), [Plain](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/plain/password-reset-help/content.html)
   * [Reset password best practices guide](https://postmarkapp.com/guides/password-reset-email-best-practices)
 
-### [Receipt](http://assets.wildbit.com/postmark/templates/dist/receipt.html)
+### Receipt
 
   Send a receipt to users after they made a purchase.
 
   * Preview with layout: [Basic](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic/receipt/content.html), [Basic full](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic-full/receipt/content.html), [Plain](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/plain/receipt/content.html)
   * [Receipt and invoices best practices guide](https://postmarkapp.com/guides/receipt-and-invoice-email-best-practices)
 
-### [Invoice](http://assets.wildbit.com/postmark/templates/dist/invoice.html)
+### Invoice
 
   Request payment from a user.
 
   * Preview with layout: [Basic](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic/invoice/content.html), [Basic full](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic-full/invoice/content.html), [Plain](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/plain/invoice/content.html)
   * [Receipt and invoices best practices guide](https://postmarkapp.com/guides/receipt-and-invoice-email-best-practices)
 
-### [Comment notification](http://assets.wildbit.com/postmark/templates/dist/comment_notification.html)
+### Comment notification
 
 Notify users of new comments by other users.
 
@@ -76,21 +76,21 @@ Notify users of new comments by other users.
   * Preview with layout: [Basic](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic/comment-notification/content.html), [Basic full](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic-full/comment-notification/content.html), [Plain](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/plain/comment-notification/content.html)
   * [Comment notification best practices guide](https://postmarkapp.com/guides/comment-notification-email-best-practices)
 
-### [Trial Expiring](http://assets.wildbit.com/postmark/templates/dist/trial_expiring.html)
+### Trial Expiring
 
   Let users know when their trial is about to expire.
 
   * Preview with layout: [Basic](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic/trial-expiring/content.html), [Basic full](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic-full/trial-expiring/content.html), [Plain](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/plain/trial-expiring/content.html)
   * [Trial expiration email best pracitces](https://postmarkapp.com/guides/trial-expiration-email-best-practices)
 
-### [Trial Expired](http://assets.wildbit.com/postmark/templates/dist/trial_expired.html)
+### Trial Expired
 
   Let users know when their expired trial.
 
   * Preview with layout: [Basic](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic/trial-expired/content.html), [Basic full](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic-full/trial-expired/content.html), [Plain](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/plain/trial-expired/content.html)
   * [Trial expiration email best pracitces](https://postmarkapp.com/guides/trial-expiration-email-best-practices)
 
-### [User Invitation](http://assets.wildbit.com/postmark/templates/dist/user_invitation.html)
+### User Invitation
 
   Help users invite others to use your software.
 
