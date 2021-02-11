@@ -111,7 +111,7 @@ If you’re having trouble clicking the confirm account button, copy and paste t
 
 {{action_url}} ( {{ action_url }} )
 
-© 2019 [Product Name]. All rights reserved.
+© 2021 [Product Name]. All rights reserved.
 
 [Company Name, LLC]
 
