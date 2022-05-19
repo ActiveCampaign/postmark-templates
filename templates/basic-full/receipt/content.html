@@ -7,7 +7,7 @@
     <meta name="color-scheme" content="light dark" />
     <meta name="supported-color-schemes" content="light dark" />
     <title></title>
-    <style type="text/css" rel="stylesheet" media="all">
+    <style type="text/css" media="all">
     /* Base ------------------------------ */
     
     @import url("https://fonts.googleapis.com/css?family=Nunito+Sans:400,700&display=swap");
@@ -452,7 +452,7 @@
             </tr>
             <!-- Email Body -->
             <tr>
-              <td class="email-body" width="100%" cellpadding="0" cellspacing="0">
+              <td class="email-body" width="100%">
                 <table class="email-body_inner" align="center" width="570" cellpadding="0" cellspacing="0" role="presentation">
                   <!-- Body content -->
                   <tr>
@@ -500,7 +500,7 @@
                                 {{#each receipt_details}}
                                 <tr>
                                   <td width="80%" class="purchase_item"><span class="f-fallback">{{description}}</span></td>
-                                  <td class="align-right" width="20%" class="purchase_item"><span class="f-fallback">{{amount}}</span></td>
+                                  <td class="align-right purchase_item" width="20%"><span class="f-fallback">{{amount}}</span></td>
                                 </tr>
                                 {{/each}}
                                 <tr>
@@ -517,7 +517,7 @@
                         </table>
                         <p>If you have any questions about this receipt, simply reply to this email or reach out to our <a href="{{support_url}}">support team</a> for help.</p>
                         <p>Cheers,
-                          <br>The [Product Name] Team</p>
+                          <br />The [Product Name] Team</p>
                         <!-- Action -->
                         <table class="body-action" align="center" width="100%" cellpadding="0" cellspacing="0" role="presentation">
                           <tr>
@@ -557,8 +557,8 @@
                       <p class="f-fallback sub align-center">&copy; 2021 [Product Name]. All rights reserved.</p>
                       <p class="f-fallback sub align-center">
                         [Company Name, LLC]
-                        <br>1234 Street Rd.
-                        <br>Suite 1234
+                        <br />1234 Street Rd.
+                        <br />Suite 1234
                       </p>
                     </td>
                   </tr>
