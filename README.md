@@ -67,6 +67,13 @@ Each template comes in three different generic layout variations: Basic, Basic f
   * 💌 Preview with layout: [Basic](https://newsletter.postmarkapp.com/assets/templates/dist/basic/invoice/content.html), [Basic full](https://newsletter.postmarkapp.com/assets/templates/dist/basic-full/invoice/content.html), [Plain](https://newsletter.postmarkapp.com/assets/templates/dist/plain/invoice/content.html)
   * 📔 [Receipt and invoices best practices guide](https://postmarkapp.com/guides/receipt-and-invoice-email-best-practices)
 
+### Dunning
+
+Let users know about a failed payment
+
+* 💌 Preview with layout: [Basic](https://newsletter.postmarkapp.com/assets/templates/dist/basic/dunning/content.html), [Basic full](https://newsletter.postmarkapp.com/assets/templates/dist/basic-full/dunning/content.html), [Plain](https://newsletter.postmarkapp.com/assets/templates/dist/plain/dunning/content.html)
+* 📔 [Dunning best practices guide](https://postmarkapp.com/guides/dunning)
+
 ### Comment notification
 
 Notify users of new comments by other users.
