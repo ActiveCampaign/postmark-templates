@@ -81,7 +81,7 @@ Example Closing
 ***************
 
 Thanks,
-[Sender Name] and the [Product Name] Team
+[Sender Name] and the [Product Name] team
 
 P.S. Need help getting started? Check out our help documentation. Or, just reply to this email with any questions or issues you have. The [Product Name] support team is always excited to help you.
 
@@ -110,8 +110,6 @@ Sub-text is for any content that needs to be included at the bottom of the email
 If you’re having trouble clicking the confirm account button, copy and paste the URL below into your web browser.
 
 {{action_url}} ( {{ action_url }} )
-
-© 2021 [Product Name]. All rights reserved.
 
 [Company Name, LLC]
 
