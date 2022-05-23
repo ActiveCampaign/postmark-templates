@@ -42,15 +42,13 @@ Total
 If you have any questions about this receipt, simply reply to this email or reach out to our support team ( {{ support_url }} ) for help.
 
 Cheers,
-The [Product Name] Team
+The [Product Name] team
 
 Download as PDF ( {{ action_url }} )
 
 Need a printable copy for your records? You can download a PDF version ( {{ action_url }} ).
 
 Moved recently? Have a new credit card? You can easily update your billing information ( {{ billing_url }} ).
-
-© 2021 [Product Name]. All rights reserved.
 
 [Company Name, LLC]
 

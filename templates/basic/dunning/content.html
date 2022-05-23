@@ -285,12 +285,12 @@
     }
     
     body {
-      background-color: #FFF;
-      color: #333;
+      background-color: #F2F4F6;
+      color: #51545E;
     }
     
     p {
-      color: #333;
+      color: #51545E;
     }
     
     .email-wrapper {
@@ -300,6 +300,7 @@
       -premailer-width: 100%;
       -premailer-cellpadding: 0;
       -premailer-cellspacing: 0;
+      background-color: #F2F4F6;
     }
     
     .email-content {
@@ -346,6 +347,7 @@
       -premailer-width: 570px;
       -premailer-cellpadding: 0;
       -premailer-cellspacing: 0;
+      background-color: #FFFFFF;
     }
     
     .email-footer {
@@ -379,7 +381,7 @@
     }
     
     .content-cell {
-      padding: 35px;
+      padding: 45px;
     }
     /*Media Queries ------------------------------ */
     
@@ -391,7 +393,13 @@
     }
     
     @media (prefers-color-scheme: dark) {
-      body {
+      body,
+      .email-body,
+      .email-body_inner,
+      .email-content,
+      .email-wrapper,
+      .email-masthead,
+      .email-footer {
         background-color: #333333 !important;
         color: #FFF !important;
       }
@@ -429,7 +437,7 @@
   <![endif]-->
   </head>
   <body>
-    <span class="preheader">This is a receipt for your recent purchase on {{ purchase_date }}. No payment is due with this receipt.</span>
+    <span class="preheader">We couldn’t process your payment. Let’s get that fixed!</span>
     <table class="email-wrapper" width="100%" cellpadding="0" cellspacing="0" role="presentation">
       <tr>
         <td align="center">
@@ -450,65 +458,8 @@
                     <td class="content-cell">
                       <div class="f-fallback">
                         <h1>Hi {{name}},</h1>
-                        <p>Thanks for using [Product Name]. This email is the receipt for your purchase. No payment is due.</p>
-                        <p>This purchase will appear as “[Credit Card Statement Name]” on your credit card statement for your {{credit_card_brand}} ending in {{credit_card_last_four}}. Need to <a href="{{billing_url}}">update your payment information</a>?</p>
-                        <!-- Discount -->
-                        <table class="discount" align="center" width="100%" cellpadding="0" cellspacing="0" role="presentation">
-                          <tr>
-                            <td align="center">
-                              <h1 class="f-fallback discount_heading">10% off your next purchase!</h1>
-                              <p class="f-fallback discount_body">Thanks for your support! Here's a coupon for 10% off your next purchase if used by {{expiration_date}}.</p>
-                              <!-- Border based button
-           https://litmus.com/blog/a-guide-to-bulletproof-buttons-in-email-design -->
-                              <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
-                                <tr>
-                                  <td align="center">
-                                    <a href="http://example.com" class="f-fallback button button--green" target="_blank">Use this discount now...</a>
-                                  </td>
-                                </tr>
-                              </table>
-                            </td>
-                          </tr>
-                        </table>
-                        <table class="purchase" width="100%" cellpadding="0" cellspacing="0" role="presentation">
-                          <tr>
-                            <td>
-                              <h3>{{receipt_id}}</h3></td>
-                            <td>
-                              <h3 class="align-right">{{date}}</h3></td>
-                          </tr>
-                          <tr>
-                            <td colspan="2">
-                              <table class="purchase_content" width="100%" cellpadding="0" cellspacing="0">
-                                <tr>
-                                  <th class="purchase_heading" align="left">
-                                    <p class="f-fallback">Description</p>
-                                  </th>
-                                  <th class="purchase_heading" align="right">
-                                    <p class="f-fallback">Amount</p>
-                                  </th>
-                                </tr>
-                                {{#each receipt_details}}
-                                <tr>
-                                  <td width="80%" class="purchase_item"><span class="f-fallback">{{description}}</span></td>
-                                  <td class="align-right" width="20%" class="purchase_item"><span class="f-fallback">{{amount}}</span></td>
-                                </tr>
-                                {{/each}}
-                                <tr>
-                                  <td width="80%" class="purchase_footer" valign="middle">
-                                    <p class="f-fallback purchase_total purchase_total--label">Total</p>
-                                  </td>
-                                  <td width="20%" class="purchase_footer" valign="middle">
-                                    <p class="f-fallback purchase_total">{{total}}</p>
-                                  </td>
-                                </tr>
-                              </table>
-                            </td>
-                          </tr>
-                        </table>
-                        <p>If you have any questions about this receipt, simply reply to this email or reach out to our <a href="{{support_url}}">support team</a> for help.</p>
-                        <p>Cheers,
-                          <br>The [Product Name] team</p>
+                        <p>We were unable to process your last payment of {{value}} for your [Product Name] subscription.</p>
+                        <p>Please take a moment to double-check your payment information to make sure your [Product Name] account keeps running smoothly.</p>
                         <!-- Action -->
                         <table class="body-action" align="center" width="100%" cellpadding="0" cellspacing="0" role="presentation">
                           <tr>
@@ -518,22 +469,39 @@
                               <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
                                 <tr>
                                   <td align="center">
-                                    <a href="{{action_url}}" class="f-fallback button button--blue" target="_blank">Download as PDF</a>
+                                    <a href="{{action_url}}" class="f-fallback button button--green" target="_blank">Check and update your billing info →</a>
                                   </td>
                                 </tr>
                               </table>
                             </td>
                           </tr>
                         </table>
-                        <!-- Sub copy -->
-                        <table class="body-sub" role="presentation">
+                        <table class="attributes" width="100%" cellpadding="0" cellspacing="0" role="presentation">
                           <tr>
-                            <td>
-                              <p class="f-fallback sub"><strong>Need a printable copy for your records?</strong> You can <a href="{{action_url}}">download a PDF version</a>.</p>
-                              <p class="f-fallback sub">Moved recently? Have a new credit card? You can easily <a href="{{billing_url}}">update your billing information</a>.</p>
+                            <td class="attributes_content">
+                              <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+                                <tr>
+                                  <td class="attributes_item">
+                                    <div class="f-fallback">
+                                      <h2>Why did the payment fail?</h2>
+                                      <p>In most cases, a payment might fail because:</p>
+                                      <ul>
+                                        <li>The card expired</li>
+                                        <li>There are insufficient funds</li>
+                                        <li>The payment needs additional authentication before we can process it.</li>
+                                      </ul>
+                                      <p class="u-margin-bottom-none">You can see more details on your recent order and why the payment failed on the <a href="{{invoice_url}}">invoice page</a>.</p>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </table>
                             </td>
                           </tr>
                         </table>
+                        <p>We’ll try charging your card again in [x] days and let you know if the payment is successful.</p>
+                        <p>If you have any questions or need our help, you can reach our support team at [email address] or just reply to this email.</p>
+                        <p>Thanks,
+                          <br>The [Product Name] team</p>
                       </div>
                     </td>
                   </tr>

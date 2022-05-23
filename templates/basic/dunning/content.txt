@@ -1,0 +1,38 @@
+We couldn’t process your payment. Let’s get that fixed!
+
+[Product Name] ( https://example.com )
+
+************
+Hi {{name}},
+************
+
+We were unable to process your last payment of {{value}} for your [Product Name] subscription.
+
+Please take a moment to double-check your payment information to make sure your [Product Name] account keeps running smoothly.
+
+Check and update your billing info → ( {{ action_url }} )
+
+-------------------------
+Why did the payment fail?
+-------------------------
+
+In most cases, a payment might fail because:
+
+* The card expired
+* There are insufficient funds
+* The payment needs additional authentication before we can process it.
+
+You can see more details on your recent order and why the payment failed on the invoice page ( {{ invoice_url }} ).
+
+We’ll try charging your card again in [x] days and let you know if the payment is successful.
+
+If you have any questions or need our help, you can reach our support team at [email address] or just reply to this email.
+
+Thanks,
+The [Product Name] team
+
+[Company Name, LLC]
+
+1234 Street Rd.
+
+Suite 1234
