@@ -10,7 +10,7 @@ Brought to you by
 
 *Postmark Transactional Email Templates* are rock-solid email templates that render beautifully in tons of email clients. They provide the foundation of our [Postmark Templates](https://postmarkapp.com/blog/special-delivery-postmark-templates) feature, and we're glad to provide them as Open Source to the wider community.
 
-These templates are built and maintained using [MailMason](https://github.com/wildbit/mailmason), a grunt-based framework to help streamline the process of developing, testing, and maintaining a set of related transactional email templates. If you want to create or customize your own set of email templates, you can use MailMason to extend the existing emails or start from scratch to build an entirely new set.
+These templates are built and maintained using [MailMason](https://github.com/activecampaign/mailmason), a grunt-based framework to help streamline the process of developing, testing, and maintaining a set of related transactional email templates. If you want to create or customize your own set of email templates, you can use MailMason to extend the existing emails or start from scratch to build an entirely new set.
 
 ## CSS & Inlining
 
@@ -19,7 +19,7 @@ There are two sets of templates here. The first set is in the `/templates` folde
 ### Inline the CSS
 For client compatibility, HTML emails should always be inlined before sending. Here are a couple of tools for doing that:
 
-* [Postmark Style Merge](https://github.com/wildbit/style-merge)
+* [Postmark Style Merge](https://github.com/activecampaign/style-merge)
 * [Premailer](https://github.com/premailer/premailer)
 
 If you choose to send your emails with [Postmark](http://postmarkapp.com), each time you send we will automagically inline the CSS for you.
@@ -28,8 +28,8 @@ If you choose to send your emails with [Postmark](http://postmarkapp.com), each 
 
 Each template comes in three different generic layout variations: Basic, Basic full, and Plain. This gives you a starting point so that you can customize your templates to match your brand.
 
-<img src="https://github.com/wildbit/postmark-templates/raw/master/media/starter-templates@2x.png" max-width="100%" alt="Starter templates side-by-side: Basic, basic full, and plain">
-<img src="https://github.com/wildbit/postmark-templates/raw/master/media/dark-mode@2x.png" max-width="100%" alt="Dark mode compatibility">
+<img src="https://github.com/activecampaign/postmark-templates/raw/master/media/starter-templates@2x.png" max-width="100%" alt="Starter templates side-by-side: Basic, basic full, and plain">
+<img src="https://github.com/activecampaign/postmark-templates/raw/master/media/dark-mode@2x.png" max-width="100%" alt="Dark mode compatibility">
 
 
 ### Welcome
@@ -78,7 +78,7 @@ Let users know about a failed payment
 
 Notify users of new comments by other users.
 
-**Note:** Comment notification isn't the prettiest preview because it's just [Mustachio](https://github.com/wildbit/mustachio). Since almost all content in this email is dynamic, it won't look good without real content. Don't worry though, that's how it's supposed to look.
+**Note:** Comment notification isn't the prettiest preview because it's just [Mustachio](https://github.com/activecampaign/mustachio). Since almost all content in this email is dynamic, it won't look good without real content. Don't worry though, that's how it's supposed to look.
 
   * 💌 Preview with layout: [Basic](https://newsletter.postmarkapp.com/assets/templates/dist/basic/comment-notification/content.html), [Basic full](https://newsletter.postmarkapp.com/assets/templates/dist/basic-full/comment-notification/content.html), [Plain](https://newsletter.postmarkapp.com/assets/templates/dist/plain/comment-notification/content.html)
   * 📔 [Comment notification best practices guide](https://postmarkapp.com/guides/comment-notification-email-best-practices)

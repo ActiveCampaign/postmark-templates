@@ -6,7 +6,7 @@ This is example text for the preheader set via the YAML front-matter for each em
 Escaped Handlebars Brackets
 ***************************
 
-Working with templates, you'll occasionally need to put some Mustachio ( https://github.com/wildbit/mustachio ) code in your Handlebars templates. To prevent the Handlebars processing from attempting to process your Mustachio code, you'll need to escape the curly braces by adding a backslash just before the opening curly braces.
+Working with templates, you'll occasionally need to put some Mustachio ( https://github.com/activecampaign/mustachio ) code in your Handlebars templates. To prevent the Handlebars processing from attempting to process your Mustachio code, you'll need to escape the curly braces by adding a backslash just before the opening curly braces.
 
 \{{ something }} will turn into {{ something }}
 
