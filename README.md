@@ -1,8 +1,8 @@
-<img src="http://assets.wildbit.com/postmark/misc/templates-logo@2x.png" alt="Postmark Transactional Email Templates" width="148" height="148" align="right">
+<img src="https://newsletter.postmarkapp.com/assets/images/open-source/templates-logo@2x.png" alt="Postmark Transactional Email Templates" width="148" height="148" align="right">
 
 # Postmark Transactional Email Templates
 Brought to you by
-<a href="http://postmarkapp.com"><img src="http://assets.wildbit.com/postmark/misc/postmark.svg" alt="Postmark"></a>
+<a href="http://postmarkapp.com"><img src="https://newsletter.postmarkapp.com/assets/images/pm_logo@2x.png" alt="Postmark" width="100"></a>
 
 **Content ready, mobile friendly, and beautiful across all major email clients.**
 
@@ -10,7 +10,7 @@ Brought to you by
 
 *Postmark Transactional Email Templates* are rock-solid email templates that render beautifully in tons of email clients. They provide the foundation of our [Postmark Templates](https://postmarkapp.com/blog/special-delivery-postmark-templates) feature, and we're glad to provide them as Open Source to the wider community.
 
-These templates are built and maintained using [MailMason](https://github.com/wildbit/mailmason), a grunt-based framework to help streamline the process of developing, testing, and maintaining a set of related transactional email templates. If you want to create or customize your own set of email templates, you can use MailMason to extend the existing emails or start from scratch to build an entirely new set.
+These templates are built and maintained using [MailMason](https://github.com/activecampaign/mailmason), a grunt-based framework to help streamline the process of developing, testing, and maintaining a set of related transactional email templates. If you want to create or customize your own set of email templates, you can use MailMason to extend the existing emails or start from scratch to build an entirely new set.
 
 ## CSS & Inlining
 
@@ -19,7 +19,7 @@ There are two sets of templates here. The first set is in the `/templates` folde
 ### Inline the CSS
 For client compatibility, HTML emails should always be inlined before sending. Here are a couple of tools for doing that:
 
-* [Postmark Style Merge](https://github.com/wildbit/style-merge)
+* [Postmark Style Merge](https://github.com/activecampaign/style-merge)
 * [Premailer](https://github.com/premailer/premailer)
 
 If you choose to send your emails with [Postmark](http://postmarkapp.com), each time you send we will automagically inline the CSS for you.
@@ -28,73 +28,80 @@ If you choose to send your emails with [Postmark](http://postmarkapp.com), each 
 
 Each template comes in three different generic layout variations: Basic, Basic full, and Plain. This gives you a starting point so that you can customize your templates to match your brand.
 
-<img src="https://github.com/wildbit/postmark-templates/raw/master/media/starter-templates@2x.png" max-width="100%" alt="Starter templates side-by-side: Basic, basic full, and plain">
-<img src="https://github.com/wildbit/postmark-templates/raw/master/media/dark-mode@2x.png" max-width="100%" alt="Dark mode compatibility">
+<img src="https://github.com/activecampaign/postmark-templates/raw/main/media/starter-templates@2x.png" max-width="100%" alt="Starter templates side-by-side: Basic, basic full, and plain">
+<img src="https://github.com/activecampaign/postmark-templates/raw/main/media/dark-mode@2x.png" max-width="100%" alt="Dark mode compatibility">
 
 
 ### Welcome
 
   Send a welcome email to users after they sign up.
 
-  * 💌 Preview with layout: [Basic](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic/welcome/content.html), [Basic full](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic-full/welcome/content.html), [Plain](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/plain/welcome/content.html)
+  * 💌 Preview with layout: [Basic](https://newsletter.postmarkapp.com/assets/templates/dist/basic/welcome/content.html), [Basic full](https://newsletter.postmarkapp.com/assets/templates/dist/basic-full/welcome/content.html), [Plain](https://newsletter.postmarkapp.com/assets/templates/dist/plain/welcome/content.html)
   * 📔 [Welcome email best practices guide](https://postmarkapp.com/guides/welcome-email-best-practices)
 
 ### Reset Password
 
   Send users a link to reset their password.
 
-  * 💌 Preview with layout: [Basic](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic/password-reset/content.html), [Basic full](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic-full/password-reset/content.html), [Plain](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/plain/password-reset/content.html)
+  * 💌 Preview with layout: [Basic](https://newsletter.postmarkapp.com/assets/templates/dist/basic/password-reset/content.html), [Basic full](https://newsletter.postmarkapp.com/assets/templates/dist/basic-full/password-reset/content.html), [Plain](https://newsletter.postmarkapp.com/assets/templates/dist/plain/password-reset/content.html)
   * 📔 [Reset password best practices guide](https://postmarkapp.com/guides/password-reset-email-best-practices)
 
 ### Reset Password Help
 
   Help users reset their password if they can’t remember their email.
 
-  * 💌 Preview with layout: [Basic](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic/password-reset-help/content.html), [Basic full](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic-full/password-reset-help/content.html), [Plain](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/plain/password-reset-help/content.html)
+  * 💌 Preview with layout: [Basic](https://newsletter.postmarkapp.com/assets/templates/dist/basic/password-reset-help/content.html), [Basic full](https://newsletter.postmarkapp.com/assets/templates/dist/basic-full/password-reset-help/content.html), [Plain](https://newsletter.postmarkapp.com/assets/templates/dist/plain/password-reset-help/content.html)
   * 📔 [Reset password best practices guide](https://postmarkapp.com/guides/password-reset-email-best-practices)
 
 ### Receipt
 
   Send a receipt to users after they made a purchase.
 
-  * 💌 Preview with layout: [Basic](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic/receipt/content.html), [Basic full](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic-full/receipt/content.html), [Plain](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/plain/receipt/content.html)
+  * 💌 Preview with layout: [Basic](https://newsletter.postmarkapp.com/assets/templates/dist/basic/receipt/content.html), [Basic full](https://newsletter.postmarkapp.com/assets/templates/dist/basic-full/receipt/content.html), [Plain](https://newsletter.postmarkapp.com/assets/templates/dist/plain/receipt/content.html)
   * 📔 [Receipt and invoices best practices guide](https://postmarkapp.com/guides/receipt-and-invoice-email-best-practices)
 
 ### Invoice
 
   Request payment from a user.
 
-  * 💌 Preview with layout: [Basic](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic/invoice/content.html), [Basic full](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic-full/invoice/content.html), [Plain](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/plain/invoice/content.html)
+  * 💌 Preview with layout: [Basic](https://newsletter.postmarkapp.com/assets/templates/dist/basic/invoice/content.html), [Basic full](https://newsletter.postmarkapp.com/assets/templates/dist/basic-full/invoice/content.html), [Plain](https://newsletter.postmarkapp.com/assets/templates/dist/plain/invoice/content.html)
   * 📔 [Receipt and invoices best practices guide](https://postmarkapp.com/guides/receipt-and-invoice-email-best-practices)
+
+### Dunning
+
+Let users know about a failed payment
+
+* 💌 Preview with layout: [Basic](https://newsletter.postmarkapp.com/assets/templates/dist/basic/dunning/content.html), [Basic full](https://newsletter.postmarkapp.com/assets/templates/dist/basic-full/dunning/content.html), [Plain](https://newsletter.postmarkapp.com/assets/templates/dist/plain/dunning/content.html)
+* 📔 [Dunning best practices guide](https://postmarkapp.com/guides/dunning)
 
 ### Comment notification
 
 Notify users of new comments by other users.
 
-**Note:** Comment notification isn't the prettiest preview because it's just [Mustachio](https://github.com/wildbit/mustachio). Since almost all content in this email is dynamic, it won't look good without real content. Don't worry though, that's how it's supposed to look.
+**Note:** Comment notification isn't the prettiest preview because it's just [Mustachio](https://github.com/activecampaign/mustachio). Since almost all content in this email is dynamic, it won't look good without real content. Don't worry though, that's how it's supposed to look.
 
-  * 💌 Preview with layout: [Basic](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic/comment-notification/content.html), [Basic full](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic-full/comment-notification/content.html), [Plain](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/plain/comment-notification/content.html)
+  * 💌 Preview with layout: [Basic](https://newsletter.postmarkapp.com/assets/templates/dist/basic/comment-notification/content.html), [Basic full](https://newsletter.postmarkapp.com/assets/templates/dist/basic-full/comment-notification/content.html), [Plain](https://newsletter.postmarkapp.com/assets/templates/dist/plain/comment-notification/content.html)
   * 📔 [Comment notification best practices guide](https://postmarkapp.com/guides/comment-notification-email-best-practices)
 
 ### Trial Expiring
 
   Let users know when their trial is about to expire.
 
-  * 💌 Preview with layout: [Basic](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic/trial-expiring/content.html), [Basic full](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic-full/trial-expiring/content.html), [Plain](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/plain/trial-expiring/content.html)
+  * 💌 Preview with layout: [Basic](https://newsletter.postmarkapp.com/assets/templates/dist/basic/trial-expiring/content.html), [Basic full](https://newsletter.postmarkapp.com/assets/templates/dist/basic-full/trial-expiring/content.html), [Plain](https://newsletter.postmarkapp.com/assets/templates/dist/plain/trial-expiring/content.html)
   * 📔 [Trial expiration email best practices](https://postmarkapp.com/guides/trial-expiration-email-best-practices)
 
 ### Trial Expired
 
   Let users know when their expired trial.
 
-  * 💌 Preview with layout: [Basic](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic/trial-expired/content.html), [Basic full](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic-full/trial-expired/content.html), [Plain](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/plain/trial-expired/content.html)
+  * 💌 Preview with layout: [Basic](https://newsletter.postmarkapp.com/assets/templates/dist/basic/trial-expired/content.html), [Basic full](https://newsletter.postmarkapp.com/assets/templates/dist/basic-full/trial-expired/content.html), [Plain](https://newsletter.postmarkapp.com/assets/templates/dist/plain/trial-expired/content.html)
   * 📔 [Trial expiration email best practices](https://postmarkapp.com/guides/trial-expiration-email-best-practices)
 
 ### User Invitation
 
   Help users invite others to use your software.
 
-  * 💌 Preview with layout: [Basic](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic/user-invitation/content.html), [Basic full](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/basic-full/user-invitation/content.html), [Plain](https://s3.amazonaws.com/assets.wildbit.com/postmark/templates/dist/plain/user-invitation/content.html)
+  * 💌 Preview with layout: [Basic](https://newsletter.postmarkapp.com/assets/templates/dist/basic/user-invitation/content.html), [Basic full](https://newsletter.postmarkapp.com/assets/templates/dist/basic-full/user-invitation/content.html), [Plain](https://newsletter.postmarkapp.com/assets/templates/dist/plain/user-invitation/content.html)
   * 📔 [User invitation email best practices](https://postmarkapp.com/guides/user-invitation-email-best-practices)
 
 
