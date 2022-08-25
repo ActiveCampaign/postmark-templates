@@ -95,7 +95,7 @@ Notify users of new comments by other users.
   Let users know when their expired trial.
 
   * 💌 Preview with layout: [Basic](https://newsletter.postmarkapp.com/assets/templates/dist/basic/trial-expired/content.html), [Basic full](https://newsletter.postmarkapp.com/assets/templates/dist/basic-full/trial-expired/content.html), [Plain](https://newsletter.postmarkapp.com/assets/templates/dist/plain/trial-expired/content.html)
-  * 📔 [Trial expiration email best pracitces](https://postmarkapp.com/guides/trial-expiration-email-best-practices)
+  * 📔 [Trial expiration email best practices](https://postmarkapp.com/guides/trial-expiration-email-best-practices)
 
 ### User Invitation
 
